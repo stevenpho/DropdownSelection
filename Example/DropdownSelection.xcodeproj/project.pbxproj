@@ -42,11 +42,11 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		60A639E9315A2D5726D96714 /* Pods-DropdownSelection_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropdownSelection_Example.release.xcconfig"; path = "Target Support Files/Pods-DropdownSelection_Example/Pods-DropdownSelection_Example.release.xcconfig"; sourceTree = "<group>"; };
-		737FA6FECDBC96018AB296F4 /* DropdownSelection.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DropdownSelection.podspec; path = ../DropdownSelection.podspec; sourceTree = "<group>"; };
+		737FA6FECDBC96018AB296F4 /* DropdownSelection.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DropdownSelection.podspec; path = ../DropdownSelection.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E51FB87BC92D81E30A1FCBE8 /* Pods-DropdownSelection_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropdownSelection_Example.debug.xcconfig"; path = "Target Support Files/Pods-DropdownSelection_Example/Pods-DropdownSelection_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E8EAAE7DC76979FBCB67AC41 /* Pods-DropdownSelection_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropdownSelection_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DropdownSelection_Tests/Pods-DropdownSelection_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F3CAEE2E9D21B59158E654ED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		FD03F8F767E8501EC3745772 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F3CAEE2E9D21B59158E654ED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FD03F8F767E8501EC3745772 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				E8EAAE7DC76979FBCB67AC41 /* Pods-DropdownSelection_Tests.debug.xcconfig */,
 				57F0336A58D355DD14A995D2 /* Pods-DropdownSelection_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -270,10 +270,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DropdownSelection_Example/Pods-DropdownSelection_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DropdownSelection/DropdownSelection.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropdownSelection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

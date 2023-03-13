@@ -1,0 +1,29 @@
+PODS:
+  - DropdownSelection (0.1.0):
+    - SnapKit (~> 5.6.0)
+    - Then (~> 3.0.0)
+  - SnapKit (5.6.0)
+  - Then (3.0.0)
+
+DEPENDENCIES:
+  - DropdownSelection (from `../`)
+  - SnapKit (~> 5.6.0)
+  - Then (~> 3.0.0)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+    - Then
+
+EXTERNAL SOURCES:
+  DropdownSelection:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DropdownSelection: cf1e0748a73fa83e4045fb44560bfcc261ce4fee
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
+
+PODFILE CHECKSUM: 47422bf0d7c88c972deb423123223675a475bb26
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,6 @@
+framework module DropdownSelection {
+  umbrella header "DropdownSelection-umbrella.h"
+
+  export *
+  module * { export * }
+}

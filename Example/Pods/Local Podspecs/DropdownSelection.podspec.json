@@ -1,0 +1,30 @@
+{
+  "name": "DropdownSelection",
+  "version": "0.1.0",
+  "summary": "A short description of DropdownSelection.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Steven Lee/DropdownSelection",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Steven Lee": "steven.mob.tw@tripleonetech.net"
+  },
+  "source": {
+    "git": "https://github.com/Steven Lee/DropdownSelection.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "DropdownSelection/Classes/**/*",
+  "dependencies": {
+    "Then": [
+      "~> 3.0.0"
+    ],
+    "SnapKit": [
+      "~> 5.6.0"
+    ]
+  }
+}
