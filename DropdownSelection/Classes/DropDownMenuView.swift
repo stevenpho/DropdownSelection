@@ -7,28 +7,29 @@
 
 import UIKit
 import SVGKit
-protocol BaseDelegate : AnyObject{}
+public protocol DropDownMenuBaseDelegate : AnyObject{}
 
-protocol AutoButtonViewDelegate : BaseDelegate{
+protocol AutoButtonViewDelegate : DropDownMenuBaseDelegate{
     func didTap(isExpaned : Bool)
 }
 
-/** 下拉選單整體View */
-public class DropDownMenuView: DropDownMenuBaseView, AutoButtonViewDelegate, DropDownContentStackViewDelegate{
+/** Drop Down Menu Result View */
+public class DropDownMenuResultView: DropDownMenuBaseView, AutoButtonViewDelegate, DropDownContentStackViewDelegate{
     /** 下拉選單上面一直顯示的結果View */
     fileprivate lazy var contentStackView = DropDownSelectionResultStackView()
-    weak var delegate : DropDownContentStackViewDelegate? = nil
+    /** Dropdown Menu Delegate */
+    public weak var delegate : DropDownContentStackViewDelegate? = nil
     /** 下拉選單列表View 會自己抓最上層的ＶＣ來加上去確保都是最上層 */
     fileprivate lazy var menuListContentStackView = DropDownContentStackView().then{
         $0.isHidden = true
     }
-    /** 下拉選單紀錄位置 */
-    lazy var point : CGRect = .zero
+    /** Dropdown Menu Record Rect */
+    public lazy var point : CGRect = .zero
     weak private var topVC : UIViewController? = nil
     /** Dropdown Menu Is Expaned */
-    lazy var isExpaned = false
-    
-    lazy var configuare : DropdownMenuConfiguare = DropdownMenuConfiguare(){
+    public lazy var isExpaned = false
+    /** Dropdown Menu Configuare */
+    public lazy var configuare : DropdownMenuConfiguare = DropdownMenuConfiguare(){
         didSet{
             DispatchQueue.main.async {
                 if (self.isExpaned && self.configuare.maxHeightIsChanged(oldValue: oldValue)){
@@ -143,9 +144,18 @@ public class DropDownMenuView: DropDownMenuBaseView, AutoButtonViewDelegate, Dro
         SVGKImage.clearCache()
     }
     
-    @objc func tapPress(){}
+    @objc func tapPress(_ sender: UITapGestureRecognizer? = nil){
+        guard let touchView = sender?.view else {return}
+
+        if (touchView.isDescendant(of: self.menuListContentStackView.menuTableView) == true || touchView.isDescendant(of: self.contentStackView.backgroundButton) == true || touchView.isDescendant(of: self) == true){
+            return
+        }
+        if (self.isExpaned == true){
+            self.contentStackView.autoButtonPress()
+        }
+    }
     
-    func didSelectMenuRow(indexPath: IndexPath, model: DropdownMenuModel) {
+    public func didSelectMenuRow(indexPath: IndexPath, model: DropdownMenuModel) {
         self.contentStackView.selectionResultView.titleLabel.text = model.title
         if (self.configuare.resultIconImage != nil){
             self.configuare.resultIconImage = model.image
@@ -153,21 +163,23 @@ public class DropDownMenuView: DropDownMenuBaseView, AutoButtonViewDelegate, Dro
         self.contentStackView.autoButtonPress()
         self.delegate?.didSelectMenuRow(indexPath: indexPath, model: model)
     }
-    /** 下拉選單結果預設title文字 */
-    func setSelectionResultTitle(title: String){
+    /** Set Drop Down Menu Result Title */
+   public func setSelectionResultTitle(title: String){
         self.contentStackView.selectionResultView.titleLabel.text = title
     }
-    func setDatas(datas: [DropdownMenuModel]){
+    /** Set Drop Down Menu List Datas */
+    public func setDatas(datas: [DropdownMenuModel]){
         self.menuListContentStackView.models = datas
     }
     
     func didTap(isExpaned: Bool) {
+        if (self.isExpaned == isExpaned){return}
         self.isExpaned = isExpaned
         if let topViewController = UIApplication.topViewController(){
             topViewController.view.endEditing(true)
             var point = CGRect.zero
             if self.menuListContentStackView.superview == nil{
-                let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapPress))
+                let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapPress(_:)))
                 //設為true會變二次不能點
                 tapGesture.cancelsTouchesInView = false//true
                 tapGesture.delegate = self
@@ -249,10 +261,11 @@ public class DropDownMenuView: DropDownMenuBaseView, AutoButtonViewDelegate, Dro
         self.feedbackGenerator?.prepare()
     }
 }
-extension DropDownMenuView : UIGestureRecognizerDelegate{
-    private func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+extension DropDownMenuResultView : UIGestureRecognizerDelegate{
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        print("press")
         guard let touchView = touch.view else {return true}
-        
+
         if (touchView.isDescendant(of: self.menuListContentStackView.menuTableView) == true || touchView.isDescendant(of: self.contentStackView.backgroundButton) == true){
             return false
         }
@@ -364,7 +377,7 @@ fileprivate class DropDownSelectionResultStackView : BaseStackView{
         }
     }
     
-    lazy var alignmentStyle : AlignImageButtonView.Alignment = .right{
+    lazy var alignmentStyle : DropDownAlignment = .right{
         didSet{
             if (oldValue == self.alignmentStyle){return}
             self.selectionResultView.alignImage(align: self.alignmentStyle)

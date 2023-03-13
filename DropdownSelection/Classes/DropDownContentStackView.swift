@@ -8,7 +8,7 @@
 import UIKit
 import Then
 
-protocol DropDownContentStackViewDelegate : BaseDelegate{
+public protocol DropDownContentStackViewDelegate : DropDownMenuBaseDelegate{
     func didSelectMenuRow(indexPath: IndexPath, model: DropdownMenuModel)
 }
 
@@ -23,11 +23,11 @@ class DropDownContentStackView : BaseStackView{
     lazy var menuTableView = UITableView().then{
         $0.canCancelContentTouches = false
         $0.isHidden = true
-        $0.estimatedRowHeight = UITableView.automaticDimension
-        $0.rowHeight = UITableView.automaticDimension
-        $0.estimatedSectionHeaderHeight = UITableView.automaticDimension
+        $0.estimatedRowHeight = UITableViewAutomaticDimension
+        $0.rowHeight = UITableViewAutomaticDimension
+        $0.estimatedSectionHeaderHeight = UITableViewAutomaticDimension
         $0.backgroundColor = .white
-        $0.sectionHeaderHeight = UITableView.automaticDimension
+        $0.sectionHeaderHeight = UITableViewAutomaticDimension
         //$0.backgroundColor = .hex293067//.clear
         $0.separatorStyle = .none
         $0.showsVerticalScrollIndicator = false

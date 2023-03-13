@@ -10,28 +10,6 @@ import UIKit
 
 class AlignImageButtonView : DropDownMenuBaseView{
     
-    enum RotationConfigure : Equatable{
-        case selectImageRotation(CGFloat)
-        case normalImageRotation(CGFloat)
-        func getRotation() -> CGFloat {
-            switch self {
-            case .selectImageRotation(let rotation):
-                return rotation
-            case .normalImageRotation(let rotation):
-                return rotation
-            }
-        }
-    }
-    
-    enum Alignment{
-        case left
-        case right
-        case top
-        case bottom
-        case center
-        case centerSpace
-        case none
-    }
     lazy var arrowImageView = UIImageView().then{
         $0.backgroundColor = .clear
     }
@@ -44,14 +22,13 @@ class AlignImageButtonView : DropDownMenuBaseView{
     lazy var titleLabel = UILabel().then{
         $0.backgroundColor = .clear
         $0.numberOfLines = 0
-        $0.textColor = .white
+        $0.textColor = .black
         $0.font = UIFont.systemFont(ofSize: 10, weight: .medium)
     }
-    lazy var currentState = Alignment.none
+    lazy var currentState = DropDownAlignment.none
     lazy var selectArrowImage = UIImage(){
         didSet{
             DispatchQueue.main.async {
-                //guard self.arrowImageView.image == nil else {return}
                 self.arrowImageView.image = self.isSelected ? self.selectArrowImage : self.normalArrowImage
             }
         }
@@ -59,7 +36,6 @@ class AlignImageButtonView : DropDownMenuBaseView{
     lazy var normalArrowImage = UIImage() {
         didSet{
             DispatchQueue.main.async {
-               // guard self.arrowImageView.image == nil else {return}
                 self.arrowImageView.image = self.isSelected ? self.selectArrowImage : self.normalArrowImage
             }
         }
@@ -114,7 +90,7 @@ class AlignImageButtonView : DropDownMenuBaseView{
     
     lazy var corner : CGFloat = 15
     lazy var borderWidth : CGFloat = 1
-    lazy var borderColor : UIColor = ShareData.shared.theme.highlight_color
+    lazy var borderColor : UIColor = .black
     
     override func setupViews() {
         self.backgroundColor = .clear//ShareData.shared.theme.bg_tertiary_color
@@ -126,7 +102,7 @@ class AlignImageButtonView : DropDownMenuBaseView{
         self.setBorder(cornerRadius: self.corner, borderWith: self.borderWidth, borderColor: self.borderColor)
     }
     
-    func alignImage(align: Alignment, spacing: CGFloat = 10){
+    func alignImage(align: DropDownAlignment, spacing: CGFloat = 10){
         if (self.currentState == align){return}
         self.currentState = align
         self.titleLabel.removeAllLayout()

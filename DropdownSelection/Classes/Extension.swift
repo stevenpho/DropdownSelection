@@ -104,21 +104,21 @@ extension UIApplication{
 //MARK: UIImage
 extension UIImage{
     static func toSvgImage(name: String, size: CGSize = CGSize.zero, fillColor: UIColor? = nil, opacity: Float = 1.0) -> UIImage{
-        return autoreleasepool {
-            if let svgImg = SVGKImage(named: name){
-                if (size != .zero){
-                    svgImg.size = size
-                }
-                if let fillColor = fillColor {
-                    svgImg.fillColor(color: fillColor, opacity: opacity)
-                }
-                if let toIconImg = svgImg.uiImage{
-                    //SVGKImage.clearCache()
-                    return toIconImg
-                }
-            }
-            return UIImage()
-        }
+        return UIImage(named: name) ?? UIImage()
+//        return autoreleasepool {
+//            if let svgImg = SVGKImage(named: name){
+//                if (size != .zero){
+//                    svgImg.size = size
+//                }
+//                if let fillColor = fillColor {
+//                    svgImg.fillColor(color: fillColor, opacity: opacity)
+//                }
+//                if let toIconImg = svgImg.uiImage{
+//                    return toIconImg
+//                }
+//            }
+//            return UIImage()
+//        }
     }
 
 }

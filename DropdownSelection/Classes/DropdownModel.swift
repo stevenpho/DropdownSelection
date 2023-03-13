@@ -7,84 +7,86 @@
 
 import Foundation
 
-enum DropDownMenuType : Equatable{
-    case categories
-    case none
-    var rawValue: String {
-        switch self {
-        case .categories:
-            return "categories"
-        case .none:
-            return "none"
-        }
+public struct DropdownMenuModel : Equatable{
+    public var id: String = UUID().uuidString
+    public var image : UIImage = UIImage()
+    public var title : String = ""
+    //need add otherwise Initializer is inaccessable due to 'internal' protection level
+    public init(id: String = UUID().uuidString,image : UIImage = UIImage(),title : String = ""){
+        self.id = id
+        self.title = title
+        self.image = image
     }
 }
 
-public struct DropdownMenuModel : Equatable{
-    var type: DropDownMenuType = .none
-    var id: String = UUID().uuidString
-    var image : UIImage = UIImage()
-    var title : String = ""
+public enum DropDownAlignment{
+    case left
+    case right
+    case top
+    case bottom
+    case center
+    case centerSpace
+    case none
 }
 
 
 public struct DropdownMenuConfiguare : Equatable{
     /** Dropdown Menu Max Height */
-    var maxHeight = AD(200)
+    public var maxHeight = AD(200)
     
     /** Dropdown Menu Result View Title FontSize */
-    var resultTitleFontSize : CGFloat = 10
+    public var resultTitleFontSize : CGFloat = 10
     
     /** Dropdown Menu Result View Has Left Icon or Not */
-    var resultIconImage : UIImage? = nil
+    public var resultIconImage : UIImage? = nil
     
     /** When Dropdown Menu View Is Appear, The Result View's  Arrow Image */
-    var resultSelectArrowImage = UIImage()
+    public var resultSelectArrowImage = UIImage(named: "icon-arrow-up") ?? UIImage()
     
     /** When Dropdown Menu View Is Hidden , The Result View's Arrow Image */
-    var resultNormalArrowImage = UIImage()
+    public var resultNormalArrowImage = UIImage(named: "icon-arrow-down") ?? UIImage()
     
     /** Dropdown Menu Result View Space Between Icon and Arrow */
-    var resultSpacing : CGFloat = 5
+    public var resultSpacing : CGFloat = 5
     
     /** Dropdown Menu View  Table Cell's Title FontSize */
-    var menuCellTitleFontSize : CGFloat = 10
+    public var menuCellTitleFontSize : CGFloat = 10
     
     /// Dropdown Menu View  Table Cell's Icon Size
-    var menuCellIconSize : CGSize = CGSize(width: 10, height: 10)
+    public var menuCellIconSize : CGSize = CGSize(width: 10, height: 10)
     
     ///Dropdown Menu Result VIew Corner Radius
-    var resultCorner : CGFloat = 15
+    public var resultCorner : CGFloat = 15
     
     ///Dropdown Menu Result VIew Border Width
-    var resultBorderWidth : CGFloat = 1
+    public var resultBorderWidth : CGFloat = 1
     
     ///Dropdown Menu Result VIew Border Color
-    var resultBorderColor : UIColor = .white
+    public var resultBorderColor : UIColor = .white
     
     ///Dropdown Menu Result VIew Arrow Icon Size
-    var resultArrowSize : CGSize = CGSize(width: 10, height: 10)
+    public var resultArrowSize : CGSize = CGSize(width: 10, height: 10)
     
     ///Is Enable Dropdown Menu Result VIew ArrowRotation effect
-    var isEnableArrowRotation : Bool = false
+    public var isEnableArrowRotation : Bool = false
     
     ///When Dropdown Menu View Is Appear, The Result VIew Arrow Rotation Angle
-    var resultSelectArrowRotation  : CGFloat = 0
+    public var resultSelectArrowRotation  : CGFloat = 0
     
     ///When Dropdown Menu View Is Hidden, The Result VIew Arrow Rotation Angle
-    var resultNormalArrowRotation  : CGFloat = 0
+    public var resultNormalArrowRotation  : CGFloat = 0
     
     ///Dropdown Menu Result VIew Icon Size
-    var resultIconSize : CGSize = CGSize(width: 10, height: 10)
+    public var resultIconSize : CGSize = CGSize(width: 10, height: 10)
     
     ///Dropdown Menu Result VIew Arrow Color
-    var resultArrowColor : UIColor = .white
+    public var resultArrowColor : UIColor = .white
     
     ///Dropdown Menu Result VIew AlignMent
-    var resultAlignmentStyle : AlignImageButtonView.Alignment = .right
+    public var resultAlignmentStyle : DropDownAlignment = .right
     
     ///Dropdown Menu Result VIew's Icon Left Spacing and Arrow Right Spacing
-    var leftRightPadding : CGFloat = 15
+    public var leftRightPadding : CGFloat = 15
 }
 
 extension DropdownMenuConfiguare{

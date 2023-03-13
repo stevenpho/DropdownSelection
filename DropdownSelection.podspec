@@ -31,10 +31,11 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'DropdownSelection/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'DropdownSelection' => ['DropdownSelection/Assets/*.png']
-  # }
+  #s.resources = "Assets/*.svg" #//for svg file
+   s.resource_bundles = {
+     'DropdownSelection' => ['DropdownSelection/Assets/*.png']
+     #'DropdownSelection' => ['DropdownSelection/Assets/*.svg']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

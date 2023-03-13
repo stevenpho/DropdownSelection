@@ -22,8 +22,8 @@ pod 'DropdownSelection'
 
 <!--## Author-->
 
-<!--Steven, a1231233434@gmail.com!-->
+<!--Steven, a1231233434@gmail.com !-->
 
 ## License
 
-DropdownSelection is available under the MIT license. See the LICENSE file for more info.
+DropdownSelection is available under the [MIT](https://github.com/stevenpho/DropdownSelection/blob/master/LICENSE) license. See the LICENSE file for more info.

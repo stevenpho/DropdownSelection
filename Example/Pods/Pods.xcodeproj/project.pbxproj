@@ -249,6 +249,7 @@
 		AD746E7F133911B18B314C8F401935F7 /* NodeList+Mutable.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B8FED315DEEF5F2E19BE3EDD2A2B10D /* NodeList+Mutable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE33DEF9A1E0CE07C541DF111FC5C7B2 /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 79845C519D7B05A5E3AA057CE1FD06F1 /* DDLegacyMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF0AFA0357741EA8533758296A244F7D /* SVGAnimatedPreserveAspectRatio.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CEC65512D1C278212B97D08040DA94A /* SVGAnimatedPreserveAspectRatio.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B03F97A129BFAF9400DFF3BE /* DropDownSelection.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B03F97A029BFAF9400DFF3BE /* DropDownSelection.xcassets */; };
 		B07DF2C5F5924BCFDF13E2CD3BB61139 /* SVGRectElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 76A9123245B974B84F3FDACB7D9BD256 /* SVGRectElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1491757310FFD9B1A43D95AA0AB7E4F /* SVGKSourceString.h in Headers */ = {isa = PBXBuildFile; fileRef = 603521BF0407C81A4032873FDD4EDB1D /* SVGKSourceString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1D0290DAA67128460DD9BAB60E66395 /* SVGLineElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD961AE0C6DBCCF9545596FF1A2BE1B /* SVGLineElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -697,6 +698,7 @@
 		AD5128782CD2AB64937799E223097040 /* DDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDOSLogger.m; path = Sources/CocoaLumberjack/DDOSLogger.m; sourceTree = "<group>"; };
 		B013904853ECD1BABA1ECD0830433A86 /* SVGTitleElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGTitleElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGTitleElement.h"; sourceTree = "<group>"; };
 		B038E2DC471646DAE7286D6F51D86483 /* SVGPolygonElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGPolygonElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGPolygonElement.m"; sourceTree = "<group>"; };
+		B03F97A029BFAF9400DFF3BE /* DropDownSelection.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DropDownSelection.xcassets; sourceTree = "<group>"; };
 		B08F395BC0FE77CF395B1D8226C36854 /* Pods-DropdownSelection_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DropdownSelection_Example.modulemap"; sourceTree = "<group>"; };
 		B0D8BF1FD03F502B7C4BB3BDD5E15CE3 /* Attr.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Attr.m; path = "Source/DOM classes/Core DOM/Attr.m"; sourceTree = "<group>"; };
 		B0F306FD54FCD6418E9B4FFD34843965 /* SVGKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVGKit.modulemap; sourceTree = "<group>"; };
@@ -1367,6 +1369,7 @@
 		A6251F1D2871F0543D9609DAAE0722DD /* DropdownSelection */ = {
 			isa = PBXGroup;
 			children = (
+				B03F979D29BFAF1600DFF3BE /* Assets */,
 				C4B633868BFF8BDD28AB030B8703EB83 /* AlignImageButtonView.swift */,
 				11C2ED427BD4D9E33FA36FBAA5F3D5AB /* BaseStackView.swift */,
 				FEFC9B25BC07F0E03D854DBC2066EBCF /* BaseTableViewCell.swift */,
@@ -1382,6 +1385,15 @@
 			);
 			name = DropdownSelection;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		B03F979D29BFAF1600DFF3BE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B03F97A029BFAF9400DFF3BE /* DropDownSelection.xcassets */,
+			);
+			name = Assets;
+			path = DropdownSelection/Assets;
 			sourceTree = "<group>";
 		};
 		C119BC005C9DD85C96F187B7C133E84E /* CocoaLumberjack */ = {
@@ -1813,10 +1825,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */,
 				D47F1A774A5F4FBF985404FB161601DD /* DropdownSelection */,
 				3F3244CEEDABCD7A2AB1A8A58C2710AC /* Pods-DropdownSelection_Example */,
 				2C1E3FBDEA60CC7A025FCE1CDCCE2375 /* Pods-DropdownSelection_Tests */,
+				E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */,
 				19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */,
 				B537A1FD6BC67DF7FE8C2B34E5CE6F19 /* SVGKit */,
 				C17AEFC79E770A2906EFAAB1A3757406 /* Then */,
@@ -1829,6 +1841,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03F97A129BFAF9400DFF3BE /* DropDownSelection.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
