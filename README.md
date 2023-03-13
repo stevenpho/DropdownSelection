@@ -22,7 +22,7 @@ pod 'DropdownSelection'
 
 ## Author
 
-Steven, a1231233434@gmail.com
+<!--Steven, a1231233434@gmail.com!-->
 
 ## License
 
