@@ -9,7 +9,7 @@ A Simple Dropdown Menu Selection.
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+<!--## Requirements-->
 
 ## Installation
 
@@ -20,7 +20,7 @@ it, simply add the following line to your Podfile:
 pod 'DropdownSelection'
 ```
 
-## Author
+<!--## Author-->
 
 <!--Steven, a1231233434@gmail.com!-->
 

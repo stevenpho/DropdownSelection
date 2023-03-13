@@ -40,4 +40,5 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'Then', '~> 3.0.0'
   s.dependency 'SnapKit', '~> 5.6.0'
+  s.dependency 'SVGKit', '~> 3.0.0'
 end

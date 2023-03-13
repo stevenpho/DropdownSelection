@@ -1,18 +1,27 @@
 PODS:
+  - CocoaLumberjack (3.7.4):
+    - CocoaLumberjack/Core (= 3.7.4)
+  - CocoaLumberjack/Core (3.7.4)
   - DropdownSelection (0.1.0):
     - SnapKit (~> 5.6.0)
+    - SVGKit (~> 3.0.0)
     - Then (~> 3.0.0)
   - SnapKit (5.6.0)
+  - SVGKit (3.0.0):
+    - CocoaLumberjack (~> 3.0)
   - Then (3.0.0)
 
 DEPENDENCIES:
   - DropdownSelection (from `../`)
   - SnapKit (~> 5.6.0)
+  - SVGKit (~> 3.0.0)
   - Then (~> 3.0.0)
 
 SPEC REPOS:
   trunk:
+    - CocoaLumberjack
     - SnapKit
+    - SVGKit
     - Then
 
 EXTERNAL SOURCES:
@@ -20,10 +29,12 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DropdownSelection: cf1e0748a73fa83e4045fb44560bfcc261ce4fee
+  CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
+  DropdownSelection: f572a5154a559b97348594a3ac53398db59e149f
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 47422bf0d7c88c972deb423123223675a475bb26
+PODFILE CHECKSUM: 0466e0d7fb79a7522e9f61524dd55b041e4a4f1a
 
 COCOAPODS: 1.11.3
