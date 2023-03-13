@@ -1,9 +1,9 @@
 # DropdownSelection
-
-[![CI Status](https://img.shields.io/travis/Steven Lee/DropdownSelection.svg?style=flat)](https://travis-ci.org/Steven Lee/DropdownSelection)
+A Simple Dropdown Menu Selection.
+<!--[![CI Status](https://img.shields.io/travis/Steven Lee/DropdownSelection.svg?style=flat)](https://travis-ci.org/Steven Lee/DropdownSelection)
 [![Version](https://img.shields.io/cocoapods/v/DropdownSelection.svg?style=flat)](https://cocoapods.org/pods/DropdownSelection)
 [![License](https://img.shields.io/cocoapods/l/DropdownSelection.svg?style=flat)](https://cocoapods.org/pods/DropdownSelection)
-[![Platform](https://img.shields.io/cocoapods/p/DropdownSelection.svg?style=flat)](https://cocoapods.org/pods/DropdownSelection)
+[![Platform](https://img.shields.io/cocoapods/p/DropdownSelection.svg?style=flat)](https://cocoapods.org/pods/DropdownSelection)-- !-->
 
 ## Example
 
@@ -22,7 +22,7 @@ pod 'DropdownSelection'
 
 ## Author
 
-Steven Lee, steven.mob.tw@tripleonetech.net
+Steven, a1231233434@gmail.com
 
 ## License
 
