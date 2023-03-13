@@ -13,6 +13,6 @@ extension UIView{
         if (views.count == 0){return}
         for view in views{
             self.addSubview(view)
-        }
+        } 
     }
 }
