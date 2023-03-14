@@ -248,12 +248,12 @@
 		AE25B5E1CDF5C196E1612BDC4163BCB5 /* SVGClipPathElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F7A31A55AC514779ACD0EC7D9DA78FA /* SVGClipPathElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE33DEF9A1E0CE07C541DF111FC5C7B2 /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 79845C519D7B05A5E3AA057CE1FD06F1 /* DDLegacyMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFE48A893EC301AB699C7D9293BD9AAB /* SVGStyleCatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = E3A71E88933898BC674F59BB1F0CA325 /* SVGStyleCatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B00738CD29C0C7C300F551D3 /* icon-arrow-up.svg in Resources */ = {isa = PBXBuildFile; fileRef = B00738C929C0C7C300F551D3 /* icon-arrow-up.svg */; };
+		B00738CE29C0C7C300F551D3 /* DropDownSelection.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00738CA29C0C7C300F551D3 /* DropDownSelection.xcassets */; };
+		B00738CF29C0C7C300F551D3 /* icon-arrow-down.svg in Resources */ = {isa = PBXBuildFile; fileRef = B00738CB29C0C7C300F551D3 /* icon-arrow-down.svg */; };
+		B00738D029C0C7C300F551D3 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = B00738CC29C0C7C300F551D3 /* demo.gif */; };
 		B009F7B92B7F7BC8DA4B14AD5A27E281 /* SVGDefsElement.m in Sources */ = {isa = PBXBuildFile; fileRef = CE92397D2181CDC49E725D228C09AC27 /* SVGDefsElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		B0768C88C76A556F1FB085EA7AFB7D5B /* SVGKParserStyles.m in Sources */ = {isa = PBXBuildFile; fileRef = 119E89AC5A620F907B13971226AD6852 /* SVGKParserStyles.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B099802B29C0BA5B00691D3D /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = B099802A29C0BA5B00691D3D /* demo.gif */; };
-		B0CB92D429C0B581005664E9 /* icon-arrow-up.svg in Resources */ = {isa = PBXBuildFile; fileRef = B0CB92D129C0B581005664E9 /* icon-arrow-up.svg */; };
-		B0CB92D529C0B581005664E9 /* DropDownSelection.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0CB92D229C0B581005664E9 /* DropDownSelection.xcassets */; };
-		B0CB92D629C0B581005664E9 /* icon-arrow-down.svg in Resources */ = {isa = PBXBuildFile; fileRef = B0CB92D329C0B581005664E9 /* icon-arrow-down.svg */; };
 		B0E47496756121CC655B610C44E4F34B /* SVGStyleElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 18FDD9B7B3E99FF7EEE227CB17092625 /* SVGStyleElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3A5BF1E34096AB714936EBF76431253 /* SVGTextContentElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0379330D712D793EAEE80C701428BECB /* SVGTextContentElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		B54985789F5E11425F04BCC9E6752C69 /* NodeList+Mutable.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B8FED315DEEF5F2E19BE3EDD2A2B10D /* NodeList+Mutable.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -703,14 +703,14 @@
 		ACAAF5AA5F42B768B85D19BCD8C0114F /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
 		ACD29B07647BB9768C621D80A048C864 /* SVGKSourceLocalFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKSourceLocalFile.h; path = Source/Sources/SVGKSourceLocalFile.h; sourceTree = "<group>"; };
 		AD5128782CD2AB64937799E223097040 /* DDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDOSLogger.m; path = Sources/CocoaLumberjack/DDOSLogger.m; sourceTree = "<group>"; };
+		B00738C929C0C7C300F551D3 /* icon-arrow-up.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "icon-arrow-up.svg"; sourceTree = "<group>"; };
+		B00738CA29C0C7C300F551D3 /* DropDownSelection.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DropDownSelection.xcassets; sourceTree = "<group>"; };
+		B00738CB29C0C7C300F551D3 /* icon-arrow-down.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "icon-arrow-down.svg"; sourceTree = "<group>"; };
+		B00738CC29C0C7C300F551D3 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 		B013904853ECD1BABA1ECD0830433A86 /* SVGTitleElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGTitleElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGTitleElement.h"; sourceTree = "<group>"; };
 		B038E2DC471646DAE7286D6F51D86483 /* SVGPolygonElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGPolygonElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGPolygonElement.m"; sourceTree = "<group>"; };
 		B08F395BC0FE77CF395B1D8226C36854 /* Pods-DropdownSelection_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DropdownSelection_Example.modulemap"; sourceTree = "<group>"; };
-		B099802A29C0BA5B00691D3D /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 		B0AFE27293A38EDF93D0FD02F92F8B97 /* DropdownModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropdownModel.swift; path = DropdownSelection/Classes/DropdownModel.swift; sourceTree = "<group>"; };
-		B0CB92D129C0B581005664E9 /* icon-arrow-up.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "icon-arrow-up.svg"; sourceTree = "<group>"; };
-		B0CB92D229C0B581005664E9 /* DropDownSelection.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DropDownSelection.xcassets; sourceTree = "<group>"; };
-		B0CB92D329C0B581005664E9 /* icon-arrow-down.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "icon-arrow-down.svg"; sourceTree = "<group>"; };
 		B0D8BF1FD03F502B7C4BB3BDD5E15CE3 /* Attr.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Attr.m; path = "Source/DOM classes/Core DOM/Attr.m"; sourceTree = "<group>"; };
 		B0F306FD54FCD6418E9B4FFD34843965 /* SVGKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVGKit.modulemap; sourceTree = "<group>"; };
 		B0F9FB5C4520D9062CE266BD34ADEDDB /* DDFileLogger+Buffering.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DDFileLogger+Buffering.m"; path = "Sources/CocoaLumberjack/Extensions/DDFileLogger+Buffering.m"; sourceTree = "<group>"; };
@@ -1374,13 +1374,13 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		B0CB92D029C0B581005664E9 /* Assets */ = {
+		B00738C829C0C7C300F551D3 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				B099802A29C0BA5B00691D3D /* demo.gif */,
-				B0CB92D129C0B581005664E9 /* icon-arrow-up.svg */,
-				B0CB92D229C0B581005664E9 /* DropDownSelection.xcassets */,
-				B0CB92D329C0B581005664E9 /* icon-arrow-down.svg */,
+				B00738C929C0C7C300F551D3 /* icon-arrow-up.svg */,
+				B00738CA29C0C7C300F551D3 /* DropDownSelection.xcassets */,
+				B00738CB29C0C7C300F551D3 /* icon-arrow-down.svg */,
+				B00738CC29C0C7C300F551D3 /* demo.gif */,
 			);
 			name = Assets;
 			path = DropdownSelection/Assets;
@@ -1434,7 +1434,7 @@
 		F1684233C8B7380C4232A2DE93291D5D /* DropdownSelection */ = {
 			isa = PBXGroup;
 			children = (
-				B0CB92D029C0B581005664E9 /* Assets */,
+				B00738C829C0C7C300F551D3 /* Assets */,
 				22705B73B09B1FFA96974923057D7A02 /* AlignImageButtonView.swift */,
 				5EE89D25B12685754CCCF1AD77571584 /* BaseStackView.swift */,
 				933B552A757364F4F6C94F5F12C0CB06 /* BaseTableViewCell.swift */,
@@ -1853,10 +1853,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0CB92D629C0B581005664E9 /* icon-arrow-down.svg in Resources */,
-				B099802B29C0BA5B00691D3D /* demo.gif in Resources */,
-				B0CB92D429C0B581005664E9 /* icon-arrow-up.svg in Resources */,
-				B0CB92D529C0B581005664E9 /* DropDownSelection.xcassets in Resources */,
+				B00738CF29C0C7C300F551D3 /* icon-arrow-down.svg in Resources */,
+				B00738D029C0C7C300F551D3 /* demo.gif in Resources */,
+				B00738CD29C0C7C300F551D3 /* icon-arrow-up.svg in Resources */,
+				B00738CE29C0C7C300F551D3 /* DropDownSelection.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

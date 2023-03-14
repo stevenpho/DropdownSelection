@@ -31,6 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '13.0'
 
   s.source_files = 'DropdownSelection/Classes/**/*'
+  s.resources = "DropdownSelection/Assets/*.svg" #//for svg file
   #s.resources = "Assets/*.svg" #//for svg file
   #s.resources = 'DropdownSelection/Pod/Assets/**/*.{png,storyboard,xcassets}'
 #   s.resource_bundles = {
