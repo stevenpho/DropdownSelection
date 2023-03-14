@@ -15,11 +15,11 @@ protocol AutoButtonViewDelegate : DropDownMenuBaseDelegate{
 
 /** Drop Down Menu Result View */
 public class DropDownMenuResultView: DropDownMenuBaseView, AutoButtonViewDelegate, DropDownContentStackViewDelegate{
-    /** 下拉選單上面一直顯示的結果View */
+    /** Dropdown Menu Result View下拉選單上面一直顯示的結果View */
     fileprivate lazy var contentStackView = DropDownSelectionResultStackView()
     /** Dropdown Menu Delegate */
     public weak var delegate : DropDownContentStackViewDelegate? = nil
-    /** 下拉選單列表View 會自己抓最上層的ＶＣ來加上去確保都是最上層 */
+    /** Dropdown Menu Will Get Top of ViewController 下拉選單列表View 會自己抓最上層的ＶＣ來加上去確保都是最上層 */
     fileprivate lazy var menuListContentStackView = DropDownContentStackView().then{
         $0.isHidden = true
     }
@@ -92,6 +92,10 @@ public class DropDownMenuResultView: DropDownMenuBaseView, AutoButtonViewDelegat
                     self.contentStackView.isArrowRotation = self.configuare.isEnableArrowRotation
                 }
                 
+                if (self.configuare.isEnableAnimationIsChanged(oldValue: oldValue)){
+                    self.isEnableAnimation = self.configuare.isEnableAnimation
+                }
+                
                 if (self.configuare.resultSelectArrowRotationIsChanged(oldValue: oldValue)){
                     self.contentStackView.selectArrowRotation = self.configuare.resultSelectArrowRotation
                 }
@@ -115,15 +119,39 @@ public class DropDownMenuResultView: DropDownMenuBaseView, AutoButtonViewDelegat
                 if (self.configuare.leftRightPaddingIsChanged(oldValue: oldValue)){
                     self.contentStackView.leftRightPadding = self.configuare.leftRightPadding
                 }
+                
+                if (self.configuare.menuTableViewBackgroundViewIsChanged(oldValue: oldValue)){
+                    self.menuListContentStackView.menuTableView.backgroundView = self.configuare.menuTableViewBackgroundView
+                }
+                
+                if (self.configuare.menuTableViewBackgroundColorIsChanged(oldValue: oldValue)){
+                    self.menuListContentStackView.menuTableView.backgroundColor = self.configuare.menuTableViewBackgroundColor
+                }
+                
+                if (self.configuare.menuContentViewBackgroundColorIsChanged(oldValue: oldValue)){
+                    self.menuListContentStackView.backgroundColor = self.configuare.menuContentViewBackgroundColor
+                }
+                
+                if (self.configuare.menuContentViewBorderRadiusIsChanged(oldValue: oldValue)){
+                    self.menuListContentStackView.setBorder(cornerRadius: self.configuare.menuContentViewBorderRadius, borderWith: self.configuare.menuContentViewBorderWidth, borderColor: self.configuare.menuContentViewBorderColor)
+                }
+                
+
+                if (self.configuare.menuContentViewBorderWidthIsChanged(oldValue: oldValue)){
+                    self.menuListContentStackView.setBorder(cornerRadius: self.configuare.menuContentViewBorderRadius, borderWith: self.configuare.menuContentViewBorderWidth, borderColor: self.configuare.menuContentViewBorderColor)
+                }
+                
+                if (self.configuare.menuContentViewBorderColorIsChanged(oldValue: oldValue)){
+                    self.menuListContentStackView.setBorder(cornerRadius: self.configuare.menuContentViewBorderRadius, borderWith: self.configuare.menuContentViewBorderWidth, borderColor: self.configuare.menuContentViewBorderColor)
+                }
             }
         }
     }
-
-    lazy private var isOverScreen = false
     
+    lazy private var isOverScreen = false
+    lazy private var isEnableAnimation = true
     override func setupViews(){
         self.backgroundColor = .clear
-        //self.clipsToBounds = false
         self.contentStackView.delegate = self
         self.addMultipleViewToSubView(views: [contentStackView])
         self.setContentHuggingPriority(.required, for: .vertical)
@@ -144,16 +172,7 @@ public class DropDownMenuResultView: DropDownMenuBaseView, AutoButtonViewDelegat
         SVGKImage.clearCache()
     }
     
-    @objc func tapPress(_ sender: UITapGestureRecognizer? = nil){
-        guard let touchView = sender?.view else {return}
-
-        if (touchView.isDescendant(of: self.menuListContentStackView.menuTableView) == true || touchView.isDescendant(of: self.contentStackView.backgroundButton) == true || touchView.isDescendant(of: self) == true){
-            return
-        }
-        if (self.isExpaned == true){
-            self.contentStackView.autoButtonPress()
-        }
-    }
+    @objc func tapPress(_ sender: UITapGestureRecognizer){}
     
     public func didSelectMenuRow(indexPath: IndexPath, model: DropdownMenuModel) {
         self.contentStackView.selectionResultView.titleLabel.text = model.title
@@ -164,7 +183,7 @@ public class DropDownMenuResultView: DropDownMenuBaseView, AutoButtonViewDelegat
         self.delegate?.didSelectMenuRow(indexPath: indexPath, model: model)
     }
     /** Set Drop Down Menu Result Title */
-   public func setSelectionResultTitle(title: String){
+    public func setSelectionResultTitle(title: String){
         self.contentStackView.selectionResultView.titleLabel.text = title
     }
     /** Set Drop Down Menu List Datas */
@@ -173,49 +192,79 @@ public class DropDownMenuResultView: DropDownMenuBaseView, AutoButtonViewDelegat
     }
     
     func didTap(isExpaned: Bool) {
-        if (self.isExpaned == isExpaned){return}
         self.isExpaned = isExpaned
         if let topViewController = UIApplication.topViewController(){
             topViewController.view.endEditing(true)
             var point = CGRect.zero
-            if self.menuListContentStackView.superview == nil{
-                let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapPress(_:)))
-                //設為true會變二次不能點
-                tapGesture.cancelsTouchesInView = false//true
-                tapGesture.delegate = self
-                topViewController.view.addGestureRecognizer(tapGesture)
-                topViewController.view.addMultipleViewToSubView(views: [self.menuListContentStackView])
-                self.topVC = topViewController
-                //init Feedback
-                self.setFeedBack()
-            }
+            self.setDropdownStackView(topViewController: topViewController)
             point = self.convert(self.contentStackView.frame, to: topViewController.view)
             if (point != self.point){
-                self.point = point
-                var topOffset = point.origin.y + point.height
-                self.isOverScreen = false
-                let distanceToBottom = topViewController.view.frame.height - topOffset - getPadding(type: .botttomPadding)
-                let distanceToTop = point.origin.y
-                //檢查最大高度是否高於底部或是大於頂部 如果有會去尋找頂部底部哪個長度最多就出現在那邊
-                if (self.configuare.maxHeight > distanceToBottom && self.configuare.maxHeight > distanceToTop){
-                    self.configuare.maxHeight = distanceToBottom > distanceToTop ? distanceToBottom : distanceToTop
-                }
-                if (topOffset > topViewController.view.frame.height - self.configuare.maxHeight){
-                    self.isOverScreen = true
-                    topOffset = point.origin.y
-                }
-                self.menuListContentStackView.remakeLayout {
-                    $0.top.equalToSuperview().offset(topOffset)
-                    $0.left.equalToSuperview().offset(point.origin.x + 6)
-                    $0.width.equalTo(point.width - self.contentStackView.selectionResultView.arrowImageView.frame.width)
-                    $0.bottom.lessThanOrEqualTo(topViewController.view.safeAreaLayoutGuide.snp.bottom)
-                }
-                self.topVC?.view.layoutIfNeeded()
-                self.menuListContentStackView.isHidden = false
+                self.checkMenuContentStackViewIsOverScreen(point: point, topViewController: topViewController)
             }
         }
-        
         self.feedBackImpact()
+        guard self.isEnableAnimation else {
+            self.menuContentStackViewWituoutAnimation(isExpaned: isExpaned)
+            return
+        }
+        self.handleMenuContentStackViewAnimation(isExpaned: isExpaned)
+    }
+    
+    private func setDropdownStackView(topViewController: UIViewController){
+        if self.menuListContentStackView.superview == nil{
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapPress(_:)))
+            //設為true會變二次不能點
+            tapGesture.cancelsTouchesInView = false//true
+            tapGesture.delegate = self
+            topViewController.view.addGestureRecognizer(tapGesture)
+            topViewController.view.addMultipleViewToSubView(views: [self.menuListContentStackView])
+            self.topVC = topViewController
+            //init Feedback
+            self.setFeedBack()
+        }
+    }
+    
+    private func checkMenuContentStackViewIsOverScreen(point: CGRect,topViewController: UIViewController){
+        self.point = point
+        var topOffset = point.origin.y + point.height
+        self.isOverScreen = false
+        let distanceToBottom = topViewController.view.frame.height - topOffset - getPadding(type: .botttomPadding)
+        let distanceToTop = point.origin.y
+        //Check whether the maximum height is higher than the bottom or greater than the top. If there is, it will go to find the length of the top and bottom and it will appear there. 檢查最大高度是否高於底部或是大於頂部 如果有會去尋找頂部底部哪個長度最多就出現在那邊
+        if (self.configuare.maxHeight > distanceToBottom && self.configuare.maxHeight > distanceToTop){
+            self.configuare.maxHeight = distanceToBottom > distanceToTop ? distanceToBottom : distanceToTop
+        }
+        if (topOffset > topViewController.view.frame.height - self.configuare.maxHeight){
+            self.isOverScreen = true
+            topOffset = point.origin.y
+        }
+        self.menuListContentStackView.remakeLayout {
+            $0.top.equalToSuperview().offset(topOffset)
+            $0.left.equalToSuperview().offset(point.origin.x + 6)
+            $0.width.equalTo(point.width - self.contentStackView.selectionResultView.arrowImageView.frame.width)
+            $0.bottom.lessThanOrEqualTo(topViewController.view.safeAreaLayoutGuide.snp.bottom)
+        }
+        self.topVC?.view.layoutIfNeeded()
+        self.menuListContentStackView.isHidden = false
+    }
+    
+    private func menuContentStackViewWituoutAnimation(isExpaned: Bool){
+        self.menuListContentStackView.menuTableView.isHidden = !isExpaned
+        let contentSize =  self.menuListContentStackView.menuTableView.contentSize.height > 0 ? self.menuListContentStackView.menuTableView.contentSize.height : 40 * UIScreen.main.bounds.width / 320
+        let tableViewHeight = contentSize > self.configuare.maxHeight ? self.configuare.maxHeight : contentSize
+        
+        if (self.isOverScreen){
+            self.menuListContentStackView.updateLayout {
+                $0.top.equalToSuperview().offset(isExpaned ? self.point.origin.y - tableViewHeight : self.point.origin.y)
+            }
+        }
+        self.menuListContentStackView.menuTableView.updateLayout {
+            $0.height.equalTo(isExpaned ? tableViewHeight : 0).priority(999)
+        }
+        self.topVC?.view.layoutIfNeeded()
+    }
+    
+    private func handleMenuContentStackViewAnimation(isExpaned: Bool){
         UIView.animate(withDuration: 0.3) {
             self.menuListContentStackView.menuTableView.isHidden = !isExpaned
             let contentSize =  self.menuListContentStackView.menuTableView.contentSize.height > 0 ? self.menuListContentStackView.menuTableView.contentSize.height : 40 * UIScreen.main.bounds.width / 320
@@ -228,6 +277,9 @@ public class DropDownMenuResultView: DropDownMenuBaseView, AutoButtonViewDelegat
             }
             self.menuListContentStackView.menuTableView.updateLayout {
                 $0.height.equalTo(isExpaned ? tableViewHeight : 0).priority(999)
+            }
+            self.menuListContentStackView.spaceView.updateLayout {
+                $0.height.equalTo(isExpaned ? 1 : 0)
             }
             
             self.topVC?.view.layoutIfNeeded()
@@ -260,12 +312,13 @@ public class DropDownMenuResultView: DropDownMenuBaseView, AutoButtonViewDelegat
         // Keep the generator in a prepared state.
         self.feedbackGenerator?.prepare()
     }
+    
 }
-extension DropDownMenuResultView : UIGestureRecognizerDelegate{
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
-        print("press")
-        guard let touchView = touch.view else {return true}
 
+extension DropDownMenuResultView : UIGestureRecognizerDelegate{
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        guard let touchView = touch.view else {return true}
+        
         if (touchView.isDescendant(of: self.menuListContentStackView.menuTableView) == true || touchView.isDescendant(of: self.contentStackView.backgroundButton) == true){
             return false
         }
@@ -276,141 +329,5 @@ extension DropDownMenuResultView : UIGestureRecognizerDelegate{
     }
 }
 
-
-
-
-//MARK: - DropDownSelectionResultStackView 選擇結果顯示View
-fileprivate class DropDownSelectionResultStackView : BaseStackView{
-    weak var delegate : AutoButtonViewDelegate? = nil
-    lazy var selectionResultView = AlignImageButtonView().then{
-        $0.titleLabel.numberOfLines = 1
-        $0.alignImage(align: .right)
-        $0.titleLabel.textAlignment = .left
-        $0.isFlipAnimation = true
-        $0.normalArrowImage = UIImage.toSvgImage(name: "icon-arrow-down",size: self.arrowSize, fillColor: self.arrowColor)
-        $0.selectArrowImage = UIImage.toSvgImage(name: "icon-arrow-up",size: self.arrowSize, fillColor: self.arrowColor)
-    }
-    
-    lazy var selectArrowImage = UIImage(){
-        didSet{
-            DispatchQueue.main.async {
-                self.selectionResultView.selectArrowImage = self.selectArrowImage
-            }
-        }
-    }
-    lazy var normalArrowImage = UIImage() {
-        didSet{
-            DispatchQueue.main.async {
-                self.selectionResultView.normalArrowImage = self.normalArrowImage
-            }
-        }
-    }
-    
-    
-    
-    lazy var arrowSize : CGSize = CGSize(width: 10, height: 10){
-        didSet{
-            if (oldValue == self.arrowSize){return}
-            DispatchQueue.main.async {
-                self.selectionResultView.selectArrowImage = UIImage.toSvgImage(name: "icon-arrow-up",size: self.arrowSize, fillColor: self.arrowColor)
-                self.selectionResultView.normalArrowImage = UIImage.toSvgImage(name: "icon-arrow-down",size: self.arrowSize, fillColor: self.arrowColor)
-                self.selectionResultView.arrowImageView.updateLayout {
-                    $0.width.equalTo(self.arrowSize.width)
-                    $0.height.equalTo(self.arrowSize.height)
-                }
-            }
-        }
-    }
-    
-    lazy var isArrowRotation : Bool = false{
-        didSet{
-            self.selectionResultView.isArrowRotation = self.isArrowRotation
-        }
-    }
-    
-    lazy var selectArrowRotation  : CGFloat = 0{
-        didSet{
-            self.selectionResultView.selectArrowRotation = self.selectArrowRotation
-        }
-    }
-    
-    lazy var normalArrowRotation  : CGFloat = 0{
-        didSet{
-            self.selectionResultView.normalArrowRotation = self.normalArrowRotation
-        }
-    }
-    
-    lazy var iconSize : CGSize = CGSize(width: 10, height: 10){
-        didSet{
-            if (oldValue == self.iconSize){return}
-            if (self.selectionResultView.currentState == .center){return}
-            DispatchQueue.main.async {
-                self.selectionResultView.iconImageView.updateLayout {
-                    $0.width.equalTo(self.iconSize.width)
-                    $0.height.equalTo(self.iconSize.height)
-                }
-            }
-        }
-    }
-    
-    lazy var arrowColor : UIColor = .white{
-        didSet{
-            if (oldValue == self.arrowColor){return}
-            DispatchQueue.main.async {
-                self.selectionResultView.selectArrowImage = UIImage.toSvgImage(name: "icon-arrow-up",size: self.arrowSize, fillColor: self.arrowColor)
-                self.selectionResultView.normalArrowImage = UIImage.toSvgImage(name: "icon-arrow-down",size: self.arrowSize, fillColor: self.arrowColor)
-            }
-        }
-    }
-    
-    lazy var leftRightPadding : CGFloat = 15{
-        didSet{
-            if (oldValue == self.leftRightPadding){return}
-            DispatchQueue.main.async {
-                self.selectionResultView.arrowImageView.updateLayout {
-                    $0.right.lessThanOrEqualToSuperview().offset(-self.leftRightPadding)
-                }
-                self.selectionResultView.iconImageView.updateLayout {
-                    $0.left.greaterThanOrEqualToSuperview().offset(self.leftRightPadding)
-                }
-            }
-        }
-    }
-    
-    lazy var alignmentStyle : DropDownAlignment = .right{
-        didSet{
-            if (oldValue == self.alignmentStyle){return}
-            self.selectionResultView.alignImage(align: self.alignmentStyle)
-        }
-    }
-    
-    lazy var backgroundButton = UIButton(type: .system).then{
-        $0.addTarget(self, action: #selector(self.autoButtonPress), for: .touchUpInside)
-    }
-    lazy var isExpaned = false {
-        didSet{
-            DispatchQueue.main.async {
-                self.selectionResultView.toggle()
-                self.delegate?.didTap(isExpaned: self.isExpaned)
-            }
-        }
-    }
-    
-    @objc func autoButtonPress(){
-        self.isExpaned = !self.isExpaned
-    }
-    override func setupViews(){
-        self.backgroundColor = .clear
-        self.axis = .vertical
-        self.addMultipleViewToArrangedSubView(views: [selectionResultView])
-        self.selectionResultView.addMultipleViewToSubView(views: [backgroundButton])
-        self.selectionResultView.addLayout {
-            $0.edges.equalToSuperview()
-        }
-        self.backgroundButton.addLayout {
-            $0.edges.equalToSuperview()
-        }
-    }
-}
 
 

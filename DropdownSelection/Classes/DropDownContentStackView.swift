@@ -26,12 +26,12 @@ class DropDownContentStackView : BaseStackView{
         $0.estimatedRowHeight = UITableViewAutomaticDimension
         $0.rowHeight = UITableViewAutomaticDimension
         $0.estimatedSectionHeaderHeight = UITableViewAutomaticDimension
-        $0.backgroundColor = .white
         $0.sectionHeaderHeight = UITableViewAutomaticDimension
         //$0.backgroundColor = .hex293067//.clear
+        //$0.backgroundView = UIImageView(image: UIImage.toSvgImage(name: "icon-arrow-up"))
         $0.separatorStyle = .none
         $0.showsVerticalScrollIndicator = false
-        $0.setBorder(cornerRadius: 4, borderWith: 1)
+        //$0.setBorder(cornerRadius: 4, borderWith: 1)
         $0.delegate = self
         $0.dataSource = self
         $0.register(DropDownMenuCell.self, forCellReuseIdentifier: DropDownMenuCell.identifier)
@@ -72,6 +72,7 @@ class DropDownContentStackView : BaseStackView{
     override func setupViews() {
         self.backgroundColor = .clear
         self.axis = .vertical
+        self.setBorder(cornerRadius: 0, borderWith: 0, borderColor: .black)
         self.addMultipleViewToArrangedSubView(views: [spaceView, menuTableView])
         self.spaceView.addLayout {
             $0.height.equalTo(1)

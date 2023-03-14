@@ -27,10 +27,9 @@ class DropDownMenuCell : BaseTableViewCell{
     }
     
     override func setupViews() {
-        self.contentView.backgroundColor = .clear//.randomColor()
+        self.contentView.backgroundColor = .clear
         self.containerView.addMultipleViewToSubView(views: [titleLabel,iconImageView])
         self.contentView.addMultipleViewToSubView(views: [containerView])
-        //self.contentView.addMultipleViewToSubView(views: [titleLabel,iconImageView])
         self.iconImageView.setContentCompressionResistancePriority(.required, for: .horizontal)
         
         self.containerView.addLayout {
@@ -51,10 +50,8 @@ class DropDownMenuCell : BaseTableViewCell{
     }
     func setModel(model: DropdownMenuModel, iconSize: CGSize = .zero){
         self.titleLabel.text = model.title
-        //self.resetLeft()
         self.resetCenter()
         if (model.image.size != .zero){
-            //self.updateLeft(image: model.image)
             self.updateCenter(image: model.image, iconSize: iconSize)
         }
     }

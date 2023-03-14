@@ -19,13 +19,15 @@ class ViewController: UIViewController {
         $0.configuare.resultBorderWidth = 2
         $0.setSelectionResultTitle(title: "Apple")
         $0.setDatas(datas: [DropdownMenuModel(title: "banana"),DropdownMenuModel(title: "food"),DropdownMenuModel(title: "rice")])
-        $0.backgroundColor = .white
+        
+        $0.configuare.menuContentViewBackgroundColor = .red
+        
+        $0.configuare.menuContentViewBorderWidth = 1
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.view.backgroundColor = .black
         self.view.addSubview(self.dropDownMenuResultView)
         self.dropDownMenuResultView.snp.makeConstraints { make in
             make.centerX.centerY.equalToSuperview()

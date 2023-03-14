@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DropdownSelection'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A Simple Dropdown Menu Selection.'
 
 # This description is used to generate tags and improve search results.
@@ -28,14 +28,15 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/stevenpho/DropdownSelection.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'DropdownSelection/Classes/**/*'
   #s.resources = "Assets/*.svg" #//for svg file
-   s.resource_bundles = {
-     'DropdownSelection' => ['DropdownSelection/Assets/*.png']
-     #'DropdownSelection' => ['DropdownSelection/Assets/*.svg']
-   }
+  #s.resources = 'DropdownSelection/Pod/Assets/**/*.{png,storyboard,xcassets}'
+#   s.resource_bundles = {
+#     'DropdownSelection' => ['DropdownSelection/Assets/*.png']
+#     #'DropdownSelection' => ['DropdownSelection/Assets/*.svg']
+#   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

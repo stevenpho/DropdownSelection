@@ -10,7 +10,7 @@ import UIKit
 public class DropDownMenuBaseView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .white
+        self.backgroundColor = .clear
         self.initialize()
         self.setupViews()
     }
@@ -21,7 +21,5 @@ public class DropDownMenuBaseView: UIView {
     
     func initialize(){}
     
-    func setupViews(){
-        self.backgroundColor = .clear
-    }
+    func setupViews(){}
 }
