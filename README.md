@@ -1,9 +1,12 @@
 # DropdownSelection
 A Simple Dropdown Menu Selection.
+<p align= "left">
+[Version]
+<img src='https://img.shields.io/cocoapods/v/DropdownSelection.svg?style=flat'>
+</p>
 <p align= "center">
 <img src='https://github.com/stevenpho/DropdownSelection/blob/master/DropdownSelection/Assets/DropDownSelection.xcassets/Logo.imageset/Logo.png'>
 </p>
-[Version](https://img.shields.io/cocoapods/v/DropdownSelection.svg?style=flat)](https://cocoapods.org/pods/DropdownSelection)
 <!--[![CI Status](https://img.shields.io/travis/Steven Lee/DropdownSelection.svg?style=flat)](https://travis-ci.org/Steven Lee/DropdownSelection)
 [![Version](https://img.shields.io/cocoapods/v/DropdownSelection.svg?style=flat)](https://cocoapods.org/pods/DropdownSelection)
 [![License](https://img.shields.io/cocoapods/l/DropdownSelection.svg?style=flat)](https://cocoapods.org/pods/DropdownSelection)
