@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import UIKit
 public struct DropdownMenuModel : Equatable{
     public var id: String = UUID().uuidString
     public var image : UIImage = UIImage()

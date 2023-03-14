@@ -251,8 +251,8 @@
 		AF0AFA0357741EA8533758296A244F7D /* SVGAnimatedPreserveAspectRatio.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CEC65512D1C278212B97D08040DA94A /* SVGAnimatedPreserveAspectRatio.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B00096C329C0802D00B3094B /* icon-arrow-up.svg in Resources */ = {isa = PBXBuildFile; fileRef = B00096C129C0802D00B3094B /* icon-arrow-up.svg */; };
 		B00096C429C0802D00B3094B /* icon-arrow-down.svg in Resources */ = {isa = PBXBuildFile; fileRef = B00096C229C0802D00B3094B /* icon-arrow-down.svg */; };
-		B00096C629C089A700B3094B /* DropDownSelectionResultStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00096C529C089A700B3094B /* DropDownSelectionResultStackView.swift */; };
 		B03F97A129BFAF9400DFF3BE /* DropDownSelection.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B03F97A029BFAF9400DFF3BE /* DropDownSelection.xcassets */; };
+		B072DA6F29C09F7F006CF92E /* DropDownSelectionResultStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072DA6E29C09F7F006CF92E /* DropDownSelectionResultStackView.swift */; };
 		B07DF2C5F5924BCFDF13E2CD3BB61139 /* SVGRectElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 76A9123245B974B84F3FDACB7D9BD256 /* SVGRectElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1491757310FFD9B1A43D95AA0AB7E4F /* SVGKSourceString.h in Headers */ = {isa = PBXBuildFile; fileRef = 603521BF0407C81A4032873FDD4EDB1D /* SVGKSourceString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1D0290DAA67128460DD9BAB60E66395 /* SVGLineElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD961AE0C6DBCCF9545596FF1A2BE1B /* SVGLineElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -701,10 +701,10 @@
 		AD5128782CD2AB64937799E223097040 /* DDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDOSLogger.m; path = Sources/CocoaLumberjack/DDOSLogger.m; sourceTree = "<group>"; };
 		B00096C129C0802D00B3094B /* icon-arrow-up.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "icon-arrow-up.svg"; sourceTree = "<group>"; };
 		B00096C229C0802D00B3094B /* icon-arrow-down.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "icon-arrow-down.svg"; sourceTree = "<group>"; };
-		B00096C529C089A700B3094B /* DropDownSelectionResultStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownSelectionResultStackView.swift; sourceTree = "<group>"; };
 		B013904853ECD1BABA1ECD0830433A86 /* SVGTitleElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGTitleElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGTitleElement.h"; sourceTree = "<group>"; };
 		B038E2DC471646DAE7286D6F51D86483 /* SVGPolygonElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGPolygonElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGPolygonElement.m"; sourceTree = "<group>"; };
 		B03F97A029BFAF9400DFF3BE /* DropDownSelection.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DropDownSelection.xcassets; sourceTree = "<group>"; };
+		B072DA6E29C09F7F006CF92E /* DropDownSelectionResultStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DropDownSelectionResultStackView.swift; path = DropdownSelection/Classes/DropDownSelectionResultStackView.swift; sourceTree = "<group>"; };
 		B08F395BC0FE77CF395B1D8226C36854 /* Pods-DropdownSelection_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DropdownSelection_Example.modulemap"; sourceTree = "<group>"; };
 		B0D8BF1FD03F502B7C4BB3BDD5E15CE3 /* Attr.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Attr.m; path = "Source/DOM classes/Core DOM/Attr.m"; sourceTree = "<group>"; };
 		B0F306FD54FCD6418E9B4FFD34843965 /* SVGKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVGKit.modulemap; sourceTree = "<group>"; };
@@ -1383,7 +1383,7 @@
 				7F0F7F508BE2563C747661FD336703BE /* DropDownContentStackView.swift */,
 				4CE15E7744FF81FB2992A178C4451AE8 /* DropDownMenuCell.swift */,
 				0A8BBD5BD56E5D7671953CB9AB4345CA /* DropDownMenuView.swift */,
-				B00096C529C089A700B3094B /* DropDownSelectionResultStackView.swift */,
+				B072DA6E29C09F7F006CF92E /* DropDownSelectionResultStackView.swift */,
 				5F2800C072F56F8B6F995CE902F14597 /* DropdownModel.swift */,
 				D56B8197D210F231F524BE5034963BB9 /* Extension.swift */,
 				1C34C3897AD3AD5488492A4D8F62C7F4 /* Helper.swift */,
@@ -1951,7 +1951,7 @@
 				13A15A9AF27935B68F8F50A743A4ABCF /* DropDownMenuCell.swift in Sources */,
 				812215F95D6D76A7937668A6E0F5708B /* DropDownMenuView.swift in Sources */,
 				6DD22F83C5C9CABE915107AA6A90E73A /* DropdownModel.swift in Sources */,
-				B00096C629C089A700B3094B /* DropDownSelectionResultStackView.swift in Sources */,
+				B072DA6F29C09F7F006CF92E /* DropDownSelectionResultStackView.swift in Sources */,
 				20DF81E9A463187282C65A5D07FBC0B6 /* DropdownSelection-dummy.m in Sources */,
 				9770F364C7D37291A17BC056AF637F49 /* Extension.swift in Sources */,
 				1D8C690B8A73D2AE0C5075486D08908F /* Helper.swift in Sources */,
