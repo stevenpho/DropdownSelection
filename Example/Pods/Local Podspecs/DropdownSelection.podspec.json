@@ -1,6 +1,6 @@
 {
   "name": "DropdownSelection",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "summary": "A Simple Dropdown Menu Selection.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/stevenpho/DropdownSelection",
@@ -13,10 +13,10 @@
   },
   "source": {
     "git": "https://github.com/stevenpho/DropdownSelection.git",
-    "tag": "0.1.0"
+    "tag": "0.1.3"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "13.0"
   },
   "source_files": "DropdownSelection/Classes/**/*",
   "dependencies": {

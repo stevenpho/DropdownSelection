@@ -23,10 +23,20 @@ class DropDownContentStackView : BaseStackView{
     lazy var menuTableView = UITableView().then{
         $0.canCancelContentTouches = false
         $0.isHidden = true
+#if swift(>=5.0)
+        //print("Running Swift 5.0 or later")
+        $0.estimatedRowHeight = UITableView.automaticDimension
+        $0.rowHeight = UITableView.automaticDimension
+        $0.estimatedSectionHeaderHeight = UITableView.automaticDimension
+        $0.sectionHeaderHeight = UITableView.automaticDimension
+#else
+//        print("Running old Swift")
         $0.estimatedRowHeight = UITableViewAutomaticDimension
         $0.rowHeight = UITableViewAutomaticDimension
         $0.estimatedSectionHeaderHeight = UITableViewAutomaticDimension
         $0.sectionHeaderHeight = UITableViewAutomaticDimension
+#endif
+        
         //$0.backgroundColor = .hex293067//.clear
         //$0.backgroundView = UIImageView(image: UIImage.toSvgImage(name: "icon-arrow-up"))
         $0.separatorStyle = .none
