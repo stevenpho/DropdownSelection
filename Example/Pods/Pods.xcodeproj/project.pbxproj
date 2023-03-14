@@ -28,7 +28,6 @@
 		0D37743F18F876B65682946353669F09 /* SVGKImage+CGContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 548CC7CDC6CFEC1B63812911FDC88588 /* SVGKImage+CGContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D682140AEF090E7873D5A46B932231C /* SVGKExporterNSData.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E91E36B21F9E5E5F0497C023136D6D /* SVGKExporterNSData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D992BD934A2F6337F65C5FED6D1C2E1 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675B1ACAC2088C8A9B97BB0A9D2A00AC /* ConstraintInsets.swift */; };
-		0DF580EA62204676B8D65BB3BB5E53E0 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFC9B25BC07F0E03D854DBC2066EBCF /* BaseTableViewCell.swift */; };
 		0E258DA0CCF729AD80FCFBF37B38CA46 /* StyleSheetList.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F647DA7591ED417A30090C1C54953E0 /* StyleSheetList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		100A65F4F2A8B93522789098D0D85168 /* SVGViewSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C640ED16EF47F10EA72ADFAEF48B5CD /* SVGViewSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10D8AFA1905E818B89B98FC006BFF694 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2FB90734390585A298F14EF61F386 /* ConstraintMakerFinalizable.swift */; };
@@ -37,7 +36,6 @@
 		12B107FD27592CC4865A2EC1387A122D /* SVGUnitTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = C326F261C21DC1BD0320848E997B8A0A /* SVGUnitTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		130E9C239BA0F90513CC646CCA3A5D98 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8BBF2A4768D7AB9371CAC88AE4595B /* Comment.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		132BB7DEB96FE98CE3A36EC06C359FCC /* CALayerWithClipRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E427BB26A0E8ACCDEFB0F68267DBBD9 /* CALayerWithClipRender.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		13A15A9AF27935B68F8F50A743A4ABCF /* DropDownMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE15E7744FF81FB2992A178C4451AE8 /* DropDownMenuCell.swift */; };
 		1453F218DE55A3BFC0078FB6C32B5949 /* StyleSheetList+Mutable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CBBC1B6317BD384C10FC7A976255AE9 /* StyleSheetList+Mutable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		145F9EAD066F70BEFEBC7C472C8B6AE0 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E73D55F6437030762FE73DCBF70578 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14B69958EB17CC40B7F0884C7F525F5A /* DocumentFragment.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C39ABE62A2BA4535DAED9FD64AF89D9 /* DocumentFragment.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -52,7 +50,6 @@
 		1B879107498475A1E0DA60B0AE1E7066 /* DDOSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F51369F5F13799AD08488C94B05BD066 /* DDOSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C35A38D28FE610C2928EA19BEC60C0C /* SVGStyleCatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = E3A71E88933898BC674F59BB1F0CA325 /* SVGStyleCatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1CD070E64A47D87CD27CFCA4B71554CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF327A0CF880B920EAC68F5F80E826C /* Foundation.framework */; };
-		1D8C690B8A73D2AE0C5075486D08908F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C34C3897AD3AD5488492A4D8F62C7F4 /* Helper.swift */; };
 		1E3A5AA6F32D92524609534A7BA1746C /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8056FA1D6CDF525ED5005E72DC5A31 /* ConstraintDirectionalInsets.swift */; };
 		1E818923CEB5457249B9481D91AE7A95 /* SVGTitleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 350B4ABCFE01B755BFAC61C53A4225CC /* SVGTitleElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		1F7D9E7BE3510A26CA231F8E3E83B5AF /* SVGDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 6239DF686E9F537850DD24B919B7AE84 /* SVGDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -93,7 +90,6 @@
 		3CCD5B3CBF2F0C5F2BF1E5A42C44F3C7 /* CSSValueList.h in Headers */ = {isa = PBXBuildFile; fileRef = 62400258D344D7200012613B6F0F556B /* CSSValueList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CDBB6E655D2F4D54BEEC8AAB924C76F /* SVGKLayeredImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 997976E7162CACEC7952346702A5331E /* SVGKLayeredImageView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		3D36A7B67F64229436E40CC609CDA042 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D87A1A689FA87079AD4209D6D118F69 /* DDASLLogCapture.m */; };
-		3DA46B5EEEE1A3E9080BCC3433D0A7C6 /* AlignImageButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B633868BFF8BDD28AB030B8703EB83 /* AlignImageButtonView.swift */; };
 		3DE6FA5132123F00BE8563EA809ABE7B /* SVGSVGElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6806A3EA3BE96A177B56B6304B4AC930 /* SVGSVGElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		3E30784AA69392A32259638BE1CC9BAE /* SVGKImage+CGContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE746A80522751FB856FAF622F03F1F /* SVGKImage+CGContext.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		3E88F5A0C50D2186FCEFF7DBC9476349 /* SVGKSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 15E10C87E14B7077C1795B9DCD6A0C1D /* SVGKSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -152,7 +148,6 @@
 		604A11803C6D97F7C018D3D1E105E0F4 /* SVGKSourceLocalFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B9CB55519E2666F4809CA42EF75EA /* SVGKSourceLocalFile.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		61B3DB6351315A62F0F37D5C1407AFFD /* SVGKParserDefsAndUse.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CFED8F9D8CEB0F0A9473B6B2D9929C /* SVGKParserDefsAndUse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		623D2FBE0AD4F63310822C4D279352DC /* DropdownSelection-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A1617E23186EB117B28851AF4DF6348 /* DropdownSelection-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62F2529A573DF404D408733D238186A0 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5D3FDB75D2DA5779FEFFA854FB7129 /* BaseView.swift */; };
 		65CD484620F6DCEEB02228CD41DEECCC /* CSSStyleRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DCD8F4B0074D199DC21298A12CF6626 /* CSSStyleRule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67377EDC34286B6D3F2B02700DCEBCAC /* NamedNodeMap.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0144BFD20CF0E058C1ED9BE59AFA80 /* NamedNodeMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6776B7E12D04332FBA54FD12E2DA2B5F /* SVGTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = DD7D79CA4EC890F6D9B545E2B927484D /* SVGTransform.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -166,7 +161,6 @@
 		6C4DDF3836E1F71CA93B592473C2824D /* SVGRadialGradientElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AC31351BB05DF88CC6007114197C4B7 /* SVGRadialGradientElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C780EBA2CB124F76A24A6B12CFC1FFE /* SVGKFastImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 468029D15A3941B876A671931372B119 /* SVGKFastImageView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		6CE899000B4835A138BBA312A3007FF2 /* SVGTransformable.h in Headers */ = {isa = PBXBuildFile; fileRef = F43A42FC0C54069CE64B7AE17C0DEEF4 /* SVGTransformable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DD22F83C5C9CABE915107AA6A90E73A /* DropdownModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2800C072F56F8B6F995CE902F14597 /* DropdownModel.swift */; };
 		6E82ADC8CDFD36151922AE49F97946E8 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3230B88126C59560E0DFDAF363427982 /* DDAbstractDatabaseLogger.m */; };
 		6E8CEF84FE6568467EE9845DCACAA435 /* CharacterData.m in Sources */ = {isa = PBXBuildFile; fileRef = A00D7D09B5C4FB10EEF3DEE163A40D45 /* CharacterData.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		6EDB75C7BC85002DE93CC2A5145689FD /* Document.h in Headers */ = {isa = PBXBuildFile; fileRef = 923ADC5058770B1FE9EE1EECC72C4222 /* Document.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -194,7 +188,6 @@
 		7E2753F32E09F14C8F71DEE524024610 /* SVGKSourceURL.h in Headers */ = {isa = PBXBuildFile; fileRef = CF7872D3E518107BD6E8784EAEFB8072 /* SVGKSourceURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E7E9B459FAD6A2AF1B9D084EAEBFC8B /* SVGGradientStop.h in Headers */ = {isa = PBXBuildFile; fileRef = FDB8E6524F1910CFF78842BBEA4E24B0 /* SVGGradientStop.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		806EC6BA258EA7A85F0CA2D11B333CB0 /* SVGGroupElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEF488C05DD2943DB8ACE839EFDCE6D /* SVGGroupElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		812215F95D6D76A7937668A6E0F5708B /* DropDownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8BBD5BD56E5D7671953CB9AB4345CA /* DropDownMenuView.swift */; };
 		8127B8BA7D1B90863751405BFF2193B2 /* SVGKParserStyles.m in Sources */ = {isa = PBXBuildFile; fileRef = 119E89AC5A620F907B13971226AD6852 /* SVGKParserStyles.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		81E78DC387F602EFC0F95D0956FE7635 /* SVGKLayeredImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8512EE47938E10570103502A0C526224 /* SVGKLayeredImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82DB56367F2E6166E07A8136734BCACA /* DDASLLogCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C3CD41ECFA3FDAE2A8716D953E57C2 /* DDASLLogCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -229,8 +222,6 @@
 		9590E0C0F5246D63EAAAB28EBB46586C /* StyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C93C450F11FDC612211F90604BA77C /* StyleSheet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		96C5AEAE007B6E5062CFFB6541DF74B4 /* CSSRuleList+Mutable.h in Headers */ = {isa = PBXBuildFile; fileRef = 2459965852B5707F9E018910BBC471B3 /* CSSRuleList+Mutable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96DC92ED81937BEDEF6349D7C0462BD6 /* SVGKParserExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = F36E521941A9CA85334AABC471664DE8 /* SVGKParserExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9770F364C7D37291A17BC056AF637F49 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56B8197D210F231F524BE5034963BB9 /* Extension.swift */; };
-		979996187CE39A3D3D0F8A38D8A54A09 /* BaseStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C2ED427BD4D9E33FA36FBAA5F3D5AB /* BaseStackView.swift */; };
 		98454557EEAF148F9F42FBEFC90DB844 /* NSData+NSInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = F4EB6E40BB84ADF46A340892DC07FC7C /* NSData+NSInputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		98D31279FE2ACE9125C854B9F894CBE2 /* SVGElementInstanceList.h in Headers */ = {isa = PBXBuildFile; fileRef = D05C6740D45FDEFCEDF6A8AACBCD3A92 /* SVGElementInstanceList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9AA75554E116EE3EC9B9CFCEAFC22ACE /* SVGKParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8B5CAEE207ABB5FE21867FF4E40355 /* SVGKParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -251,8 +242,18 @@
 		AF0AFA0357741EA8533758296A244F7D /* SVGAnimatedPreserveAspectRatio.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CEC65512D1C278212B97D08040DA94A /* SVGAnimatedPreserveAspectRatio.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B00096C329C0802D00B3094B /* icon-arrow-up.svg in Resources */ = {isa = PBXBuildFile; fileRef = B00096C129C0802D00B3094B /* icon-arrow-up.svg */; };
 		B00096C429C0802D00B3094B /* icon-arrow-down.svg in Resources */ = {isa = PBXBuildFile; fileRef = B00096C229C0802D00B3094B /* icon-arrow-down.svg */; };
+		B0070C4629C0A26300FA1166 /* DropDownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0070C3B29C0A26200FA1166 /* DropDownMenuView.swift */; };
+		B0070C4729C0A26300FA1166 /* DropDownSelectionResultStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0070C3C29C0A26200FA1166 /* DropDownSelectionResultStackView.swift */; };
+		B0070C4829C0A26300FA1166 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0070C3D29C0A26200FA1166 /* BaseView.swift */; };
+		B0070C4929C0A26300FA1166 /* DropdownModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0070C3E29C0A26200FA1166 /* DropdownModel.swift */; };
+		B0070C4A29C0A26300FA1166 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0070C3F29C0A26200FA1166 /* Extension.swift */; };
+		B0070C4B29C0A26300FA1166 /* BaseStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0070C4029C0A26200FA1166 /* BaseStackView.swift */; };
+		B0070C4C29C0A26300FA1166 /* AlignImageButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0070C4129C0A26200FA1166 /* AlignImageButtonView.swift */; };
+		B0070C4D29C0A26300FA1166 /* DropDownMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0070C4229C0A26200FA1166 /* DropDownMenuCell.swift */; };
+		B0070C4E29C0A26300FA1166 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0070C4329C0A26200FA1166 /* Helper.swift */; };
+		B0070C4F29C0A26300FA1166 /* DropDownContentStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0070C4429C0A26200FA1166 /* DropDownContentStackView.swift */; };
+		B0070C5029C0A26300FA1166 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0070C4529C0A26300FA1166 /* BaseTableViewCell.swift */; };
 		B03F97A129BFAF9400DFF3BE /* DropDownSelection.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B03F97A029BFAF9400DFF3BE /* DropDownSelection.xcassets */; };
-		B072DA6F29C09F7F006CF92E /* DropDownSelectionResultStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072DA6E29C09F7F006CF92E /* DropDownSelectionResultStackView.swift */; };
 		B07DF2C5F5924BCFDF13E2CD3BB61139 /* SVGRectElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 76A9123245B974B84F3FDACB7D9BD256 /* SVGRectElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1491757310FFD9B1A43D95AA0AB7E4F /* SVGKSourceString.h in Headers */ = {isa = PBXBuildFile; fileRef = 603521BF0407C81A4032873FDD4EDB1D /* SVGKSourceString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1D0290DAA67128460DD9BAB60E66395 /* SVGLineElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD961AE0C6DBCCF9545596FF1A2BE1B /* SVGLineElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -284,7 +285,6 @@
 		C32A631B21CFF211CD09019B39C75C8F /* SVGKInlineResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EC15D6F7A91E8E698BCFCE55793855 /* SVGKInlineResource.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		C4655021F8EE5494D4D1AC2A426C3178 /* ConstraintDirectionalInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D358E643448B2C0096F6FDF503D3F7B /* ConstraintDirectionalInsetTarget.swift */; };
 		C4E7CF35F8B1D7820EC0B80F290DC759 /* CSSValueList.m in Sources */ = {isa = PBXBuildFile; fileRef = 665FE4B8D314A1911317A35CF7FC4560 /* CSSValueList.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C691AAE018747C70C6F6F00AD38E702D /* DropDownContentStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F7F508BE2563C747661FD336703BE /* DropDownContentStackView.swift */; };
 		C69B016505A2D91FBEF9D38147627AC4 /* SVGDescriptionElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AAF4A7CAC590319A7356DE54DC8F68 /* SVGDescriptionElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		C700AC8918267D8299CD653C53BF9618 /* SVGPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDE62F6341DFB736B73E8C36166AA08 /* SVGPoint.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		C7EA208818DA045E89872E4C689CE3C5 /* SVGTextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E4BF112DE15B822CA2BF4F68E773A9 /* SVGTextLayer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -444,7 +444,6 @@
 		08E37E305931C4C8E8C3D768685E11EF /* CAShapeLayerWithHitTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CAShapeLayerWithHitTest.m; path = "Source/QuartzCore additions/CAShapeLayerWithHitTest.m"; sourceTree = "<group>"; };
 		08F703711DF6C71B4A6A8DBD844C8259 /* Pods-DropdownSelection_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DropdownSelection_Example-frameworks.sh"; sourceTree = "<group>"; };
 		09C93C450F11FDC612211F90604BA77C /* StyleSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = StyleSheet.m; path = "Source/DOM classes/Core DOM/StyleSheet.m"; sourceTree = "<group>"; };
-		0A8BBD5BD56E5D7671953CB9AB4345CA /* DropDownMenuView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownMenuView.swift; path = DropdownSelection/Classes/DropDownMenuView.swift; sourceTree = "<group>"; };
 		0E427BB26A0E8ACCDEFB0F68267DBBD9 /* CALayerWithClipRender.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CALayerWithClipRender.m; path = "Source/QuartzCore additions/CALayerWithClipRender.m"; sourceTree = "<group>"; };
 		0EE3F4E5407CA0B826EE0308359C90F6 /* SVGKDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKDefine.h; path = Source/SVGKDefine.h; sourceTree = "<group>"; };
 		0F647DA7591ED417A30090C1C54953E0 /* StyleSheetList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StyleSheetList.h; path = "Source/DOM classes/Core DOM/StyleSheetList.h"; sourceTree = "<group>"; };
@@ -453,7 +452,6 @@
 		1063B11C4C32F9DAD48799AB3906E61D /* SVGUseElement_Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGUseElement_Mutable.h; path = "Source/DOM classes/SVG-DOM/SVGUseElement_Mutable.h"; sourceTree = "<group>"; };
 		10955FE9064C96F830BAC87B5BF77889 /* SVGTextPositioningElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGTextPositioningElement.h; path = "Source/DOM classes/SVG-DOM/SVGTextPositioningElement.h"; sourceTree = "<group>"; };
 		119E89AC5A620F907B13971226AD6852 /* SVGKParserStyles.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKParserStyles.m; path = "Source/Parsers/Parser Extensions/SVGKParserStyles.m"; sourceTree = "<group>"; };
-		11C2ED427BD4D9E33FA36FBAA5F3D5AB /* BaseStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseStackView.swift; path = DropdownSelection/Classes/BaseStackView.swift; sourceTree = "<group>"; };
 		12BEDDD9496BF907D6EDC5F97CC0A6F3 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Sources/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
 		138D950F4619D388353DD9A4CC975031 /* Comment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Comment.h; path = "Source/DOM classes/Core DOM/Comment.h"; sourceTree = "<group>"; };
 		152F34D97094CC886E9635D3B1B39670 /* SVGEllipseElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGEllipseElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGEllipseElement.h"; sourceTree = "<group>"; };
@@ -469,7 +467,6 @@
 		1BD961AE0C6DBCCF9545596FF1A2BE1B /* SVGLineElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGLineElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGLineElement.h"; sourceTree = "<group>"; };
 		1BEF488C05DD2943DB8ACE839EFDCE6D /* SVGGroupElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGGroupElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGGroupElement.m"; sourceTree = "<group>"; };
 		1C07E3B25F1AC362DB74B58DF49DEA50 /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h; sourceTree = "<group>"; };
-		1C34C3897AD3AD5488492A4D8F62C7F4 /* Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = DropdownSelection/Classes/Helper.swift; sourceTree = "<group>"; };
 		1DAFD8FF317159B03372421A3EF1E8ED /* DropdownSelection-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropdownSelection-Info.plist"; sourceTree = "<group>"; };
 		1F1E51876CA9C5D8BB1C97532D718304 /* Document+Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Document+Mutable.h"; path = "Source/DOM classes/Core DOM/Document+Mutable.h"; sourceTree = "<group>"; };
 		1F8056FA1D6CDF525ED5005E72DC5A31 /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Sources/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
@@ -543,7 +540,6 @@
 		4A39381AF0880BED00589163BD6E566B /* SVGKExporterUIImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKExporterUIImage.h; path = Source/Exporters/SVGKExporterUIImage.h; sourceTree = "<group>"; };
 		4B31089520E067C6E87DD00703DF83B9 /* SVGCircleElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGCircleElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGCircleElement.m"; sourceTree = "<group>"; };
 		4B66F31E99BE6B435BB2B759175CFA04 /* Pods-DropdownSelection_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DropdownSelection_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4CE15E7744FF81FB2992A178C4451AE8 /* DropDownMenuCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownMenuCell.swift; path = DropdownSelection/Classes/DropDownMenuCell.swift; sourceTree = "<group>"; };
 		4CEC65512D1C278212B97D08040DA94A /* SVGAnimatedPreserveAspectRatio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGAnimatedPreserveAspectRatio.h; path = "Source/DOM classes/SVG-DOM/SVGAnimatedPreserveAspectRatio.h"; sourceTree = "<group>"; };
 		4DDE45DA75D1788B8B7366CFE8B09DA5 /* SVGKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SVGKit-Info.plist"; sourceTree = "<group>"; };
 		4ECA32F3A3106B3B3193572709384AC6 /* Node.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Node.m; path = "Source/DOM classes/Core DOM/Node.m"; sourceTree = "<group>"; };
@@ -572,7 +568,6 @@
 		5CDE62F6341DFB736B73E8C36166AA08 /* SVGPoint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGPoint.m; path = "Source/DOM classes/SVG-DOM/SVGPoint.m"; sourceTree = "<group>"; };
 		5DCD8F4B0074D199DC21298A12CF6626 /* CSSStyleRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSStyleRule.h; path = "Source/DOM classes/Core DOM/CSSStyleRule.h"; sourceTree = "<group>"; };
 		5EA271E756CFED374502658FD350DE05 /* SVGElementInstance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGElementInstance.h; path = "Source/DOM classes/SVG-DOM/SVGElementInstance.h"; sourceTree = "<group>"; };
-		5F2800C072F56F8B6F995CE902F14597 /* DropdownModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropdownModel.swift; path = DropdownSelection/Classes/DropdownModel.swift; sourceTree = "<group>"; };
 		6004CB12F75A70289FE2DC038E399689 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Sources/Constraint.swift; sourceTree = "<group>"; };
 		603521BF0407C81A4032873FDD4EDB1D /* SVGKSourceString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKSourceString.h; path = Source/Sources/SVGKSourceString.h; sourceTree = "<group>"; };
 		60732732C794D2310979A7B61F44EE13 /* SVGLength.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGLength.h; path = "Source/DOM classes/SVG-DOM/SVGLength.h"; sourceTree = "<group>"; };
@@ -627,7 +622,6 @@
 		7C39ABE62A2BA4535DAED9FD64AF89D9 /* DocumentFragment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DocumentFragment.h; path = "Source/DOM classes/Core DOM/DocumentFragment.h"; sourceTree = "<group>"; };
 		7C640ED16EF47F10EA72ADFAEF48B5CD /* SVGViewSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGViewSpec.h; path = "Source/DOM classes/SVG-DOM/SVGViewSpec.h"; sourceTree = "<group>"; };
 		7D1AED516F5027A1D743958202804555 /* Pods-DropdownSelection_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DropdownSelection_Example-Info.plist"; sourceTree = "<group>"; };
-		7F0F7F508BE2563C747661FD336703BE /* DropDownContentStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownContentStackView.swift; path = DropdownSelection/Classes/DropDownContentStackView.swift; sourceTree = "<group>"; };
 		7F14C2F1279B8EC1B33EA9D356501232 /* CAShapeLayerWithHitTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CAShapeLayerWithHitTest.h; path = "Source/QuartzCore additions/CAShapeLayerWithHitTest.h"; sourceTree = "<group>"; };
 		816D54BEB2873280FC25A814560ADEB9 /* ProcessingInstruction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ProcessingInstruction.m; path = "Source/DOM classes/Core DOM/ProcessingInstruction.m"; sourceTree = "<group>"; };
 		8201940FD18DD2FF10155269BD15024E /* SVGKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVGKit-dummy.m"; sourceTree = "<group>"; };
@@ -701,10 +695,20 @@
 		AD5128782CD2AB64937799E223097040 /* DDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDOSLogger.m; path = Sources/CocoaLumberjack/DDOSLogger.m; sourceTree = "<group>"; };
 		B00096C129C0802D00B3094B /* icon-arrow-up.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "icon-arrow-up.svg"; sourceTree = "<group>"; };
 		B00096C229C0802D00B3094B /* icon-arrow-down.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "icon-arrow-down.svg"; sourceTree = "<group>"; };
+		B0070C3B29C0A26200FA1166 /* DropDownMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownMenuView.swift; sourceTree = "<group>"; };
+		B0070C3C29C0A26200FA1166 /* DropDownSelectionResultStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownSelectionResultStackView.swift; sourceTree = "<group>"; };
+		B0070C3D29C0A26200FA1166 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		B0070C3E29C0A26200FA1166 /* DropdownModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropdownModel.swift; sourceTree = "<group>"; };
+		B0070C3F29C0A26200FA1166 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		B0070C4029C0A26200FA1166 /* BaseStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseStackView.swift; sourceTree = "<group>"; };
+		B0070C4129C0A26200FA1166 /* AlignImageButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlignImageButtonView.swift; sourceTree = "<group>"; };
+		B0070C4229C0A26200FA1166 /* DropDownMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownMenuCell.swift; sourceTree = "<group>"; };
+		B0070C4329C0A26200FA1166 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		B0070C4429C0A26200FA1166 /* DropDownContentStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownContentStackView.swift; sourceTree = "<group>"; };
+		B0070C4529C0A26300FA1166 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		B013904853ECD1BABA1ECD0830433A86 /* SVGTitleElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGTitleElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGTitleElement.h"; sourceTree = "<group>"; };
 		B038E2DC471646DAE7286D6F51D86483 /* SVGPolygonElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGPolygonElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGPolygonElement.m"; sourceTree = "<group>"; };
 		B03F97A029BFAF9400DFF3BE /* DropDownSelection.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DropDownSelection.xcassets; sourceTree = "<group>"; };
-		B072DA6E29C09F7F006CF92E /* DropDownSelectionResultStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DropDownSelectionResultStackView.swift; path = DropdownSelection/Classes/DropDownSelectionResultStackView.swift; sourceTree = "<group>"; };
 		B08F395BC0FE77CF395B1D8226C36854 /* Pods-DropdownSelection_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DropdownSelection_Example.modulemap"; sourceTree = "<group>"; };
 		B0D8BF1FD03F502B7C4BB3BDD5E15CE3 /* Attr.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Attr.m; path = "Source/DOM classes/Core DOM/Attr.m"; sourceTree = "<group>"; };
 		B0F306FD54FCD6418E9B4FFD34843965 /* SVGKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVGKit.modulemap; sourceTree = "<group>"; };
@@ -734,7 +738,6 @@
 		C2CEA484E3AE4A295E4C9C2E96FF0409 /* CocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaLumberjack.h; path = "Sources/CocoaLumberjack/Supporting Files/CocoaLumberjack.h"; sourceTree = "<group>"; };
 		C2E9BCF8E9DEFCB09CD2C051AFF2699B /* SVGKExporterNSImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKExporterNSImage.m; path = Source/Exporters/SVGKExporterNSImage.m; sourceTree = "<group>"; };
 		C326F261C21DC1BD0320848E997B8A0A /* SVGUnitTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGUnitTypes.h; path = "Source/DOM classes/SVG-DOM/SVGUnitTypes.h"; sourceTree = "<group>"; };
-		C4B633868BFF8BDD28AB030B8703EB83 /* AlignImageButtonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlignImageButtonView.swift; path = DropdownSelection/Classes/AlignImageButtonView.swift; sourceTree = "<group>"; };
 		C4BA118D6043FE317671688373471449 /* Then.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Then.swift; path = Sources/Then/Then.swift; sourceTree = "<group>"; };
 		C5B41A12DE08668E46E52D1902162F34 /* SVGKSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKSource.m; path = Source/SVGKSource.m; sourceTree = "<group>"; };
 		C61E585F4660DE4F0505C078EA174457 /* Then-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Then-dummy.m"; sourceTree = "<group>"; };
@@ -760,7 +763,6 @@
 		D0C81A9DE037431B254B2BC44342EFB1 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Sources/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		D0F1E7865CC9A101C2BD5BF9659F03C9 /* SVGKImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKImage.m; path = Source/SVGKImage.m; sourceTree = "<group>"; };
 		D49A4A228D2808C6EC5F0D4E052203BC /* SVGDefsElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGDefsElement.h; path = "Source/DOM classes/SVG-DOM/SVGDefsElement.h"; sourceTree = "<group>"; };
-		D56B8197D210F231F524BE5034963BB9 /* Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = DropdownSelection/Classes/Extension.swift; sourceTree = "<group>"; };
 		D5742A17F59207414DCAEAEDC9B0D390 /* NamedNodeMap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NamedNodeMap.m; path = "Source/DOM classes/Core DOM/NamedNodeMap.m"; sourceTree = "<group>"; };
 		D576C3CC51C5343891F508272E29286C /* CSSStyleRule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSStyleRule.m; path = "Source/DOM classes/Core DOM/CSSStyleRule.m"; sourceTree = "<group>"; };
 		D5C51CFD1D59052813714EB2F64AF5FC /* SVGGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGGradientLayer.h; path = "Source/QuartzCore additions/SVGGradientLayer.h"; sourceTree = "<group>"; };
@@ -781,7 +783,6 @@
 		DE70EDDED6E94206B3EA1CDDF138005B /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Sources/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		DE88F25970431C2B0D181F9697D69B7E /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDMultiFormatter.h; sourceTree = "<group>"; };
 		DF3EB85B3BE51B5F3CB30B707137F210 /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Sources/CocoaLumberjack/DDFileLogger.m; sourceTree = "<group>"; };
-		DF5D3FDB75D2DA5779FEFFA854FB7129 /* BaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseView.swift; path = DropdownSelection/Classes/BaseView.swift; sourceTree = "<group>"; };
 		DFEB9B1F8AE12CA1436A21D4E802BCBC /* Pods-DropdownSelection_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DropdownSelection_Example-dummy.m"; sourceTree = "<group>"; };
 		E13DB41E3851F58B04E2AD18DB67B7E0 /* SVGRect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGRect.m; path = "Source/DOM classes/SVG-DOM/SVGRect.m"; sourceTree = "<group>"; };
 		E1545B1C11C53D58248195AAA338971A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -820,7 +821,6 @@
 		FCED0224CD394DC2BA2A26D533E52FD6 /* CSSStyleSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSStyleSheet.h; path = "Source/DOM classes/Core DOM/CSSStyleSheet.h"; sourceTree = "<group>"; };
 		FDAA2645665FC1363E6C7805B198CCEE /* SVGLinearGradientElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGLinearGradientElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGLinearGradientElement.h"; sourceTree = "<group>"; };
 		FDB8E6524F1910CFF78842BBEA4E24B0 /* SVGGradientStop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGGradientStop.h; path = "Source/DOM classes/Unported or Partial DOM/SVGGradientStop.h"; sourceTree = "<group>"; };
-		FEFC9B25BC07F0E03D854DBC2066EBCF /* BaseTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseTableViewCell.swift; path = DropdownSelection/Classes/BaseTableViewCell.swift; sourceTree = "<group>"; };
 		FFC2AF096C03AE75C2517940EBFBE570 /* SVGKSourceNSData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKSourceNSData.m; path = Source/Sources/SVGKSourceNSData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1375,23 +1375,32 @@
 		A6251F1D2871F0543D9609DAAE0722DD /* DropdownSelection */ = {
 			isa = PBXGroup;
 			children = (
+				B0070C3A29C0A24D00FA1166 /* Classes */,
 				B03F979D29BFAF1600DFF3BE /* Assets */,
-				C4B633868BFF8BDD28AB030B8703EB83 /* AlignImageButtonView.swift */,
-				11C2ED427BD4D9E33FA36FBAA5F3D5AB /* BaseStackView.swift */,
-				FEFC9B25BC07F0E03D854DBC2066EBCF /* BaseTableViewCell.swift */,
-				DF5D3FDB75D2DA5779FEFFA854FB7129 /* BaseView.swift */,
-				7F0F7F508BE2563C747661FD336703BE /* DropDownContentStackView.swift */,
-				4CE15E7744FF81FB2992A178C4451AE8 /* DropDownMenuCell.swift */,
-				0A8BBD5BD56E5D7671953CB9AB4345CA /* DropDownMenuView.swift */,
-				B072DA6E29C09F7F006CF92E /* DropDownSelectionResultStackView.swift */,
-				5F2800C072F56F8B6F995CE902F14597 /* DropdownModel.swift */,
-				D56B8197D210F231F524BE5034963BB9 /* Extension.swift */,
-				1C34C3897AD3AD5488492A4D8F62C7F4 /* Helper.swift */,
 				70BCEC417B773CA4149F0485D967ACD3 /* Pod */,
 				61707334B56D0E34CA9001C364FB41D4 /* Support Files */,
 			);
 			name = DropdownSelection;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		B0070C3A29C0A24D00FA1166 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B0070C4129C0A26200FA1166 /* AlignImageButtonView.swift */,
+				B0070C4029C0A26200FA1166 /* BaseStackView.swift */,
+				B0070C4529C0A26300FA1166 /* BaseTableViewCell.swift */,
+				B0070C3D29C0A26200FA1166 /* BaseView.swift */,
+				B0070C4429C0A26200FA1166 /* DropDownContentStackView.swift */,
+				B0070C4229C0A26200FA1166 /* DropDownMenuCell.swift */,
+				B0070C3B29C0A26200FA1166 /* DropDownMenuView.swift */,
+				B0070C3E29C0A26200FA1166 /* DropdownModel.swift */,
+				B0070C3C29C0A26200FA1166 /* DropDownSelectionResultStackView.swift */,
+				B0070C3F29C0A26200FA1166 /* Extension.swift */,
+				B0070C4329C0A26200FA1166 /* Helper.swift */,
+			);
+			name = Classes;
+			path = DropdownSelection/Classes;
 			sourceTree = "<group>";
 		};
 		B03F979D29BFAF1600DFF3BE /* Assets */ = {
@@ -1820,6 +1829,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					D47F1A774A5F4FBF985404FB161601DD = {
+						LastSwiftMigration = 1310;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1943,18 +1957,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DA46B5EEEE1A3E9080BCC3433D0A7C6 /* AlignImageButtonView.swift in Sources */,
-				979996187CE39A3D3D0F8A38D8A54A09 /* BaseStackView.swift in Sources */,
-				0DF580EA62204676B8D65BB3BB5E53E0 /* BaseTableViewCell.swift in Sources */,
-				62F2529A573DF404D408733D238186A0 /* BaseView.swift in Sources */,
-				C691AAE018747C70C6F6F00AD38E702D /* DropDownContentStackView.swift in Sources */,
-				13A15A9AF27935B68F8F50A743A4ABCF /* DropDownMenuCell.swift in Sources */,
-				812215F95D6D76A7937668A6E0F5708B /* DropDownMenuView.swift in Sources */,
-				6DD22F83C5C9CABE915107AA6A90E73A /* DropdownModel.swift in Sources */,
-				B072DA6F29C09F7F006CF92E /* DropDownSelectionResultStackView.swift in Sources */,
+				B0070C4929C0A26300FA1166 /* DropdownModel.swift in Sources */,
+				B0070C4F29C0A26300FA1166 /* DropDownContentStackView.swift in Sources */,
+				B0070C4629C0A26300FA1166 /* DropDownMenuView.swift in Sources */,
+				B0070C4C29C0A26300FA1166 /* AlignImageButtonView.swift in Sources */,
+				B0070C5029C0A26300FA1166 /* BaseTableViewCell.swift in Sources */,
 				20DF81E9A463187282C65A5D07FBC0B6 /* DropdownSelection-dummy.m in Sources */,
-				9770F364C7D37291A17BC056AF637F49 /* Extension.swift in Sources */,
-				1D8C690B8A73D2AE0C5075486D08908F /* Helper.swift in Sources */,
+				B0070C4A29C0A26300FA1166 /* Extension.swift in Sources */,
+				B0070C4729C0A26300FA1166 /* DropDownSelectionResultStackView.swift in Sources */,
+				B0070C4D29C0A26300FA1166 /* DropDownMenuCell.swift in Sources */,
+				B0070C4E29C0A26300FA1166 /* Helper.swift in Sources */,
+				B0070C4B29C0A26300FA1166 /* BaseStackView.swift in Sources */,
+				B0070C4829C0A26300FA1166 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2231,6 +2245,7 @@
 			baseConfigurationReference = 481BB9D482BA84579489F4FF7A1B2846 /* DropdownSelection.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2616,6 +2631,7 @@
 			baseConfigurationReference = 71D0B929E6F6ED90ED42CCAB461AB280 /* DropdownSelection.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2636,6 +2652,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
