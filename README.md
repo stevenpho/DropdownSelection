@@ -1,7 +1,6 @@
 # DropdownSelection
 A Simple Dropdown Menu Selection.
 <p align= "left">
-[Version]
 <img src='https://img.shields.io/cocoapods/v/DropdownSelection.svg?style=flat'>
 </p>
 <p align= "center">
