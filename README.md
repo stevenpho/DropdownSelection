@@ -6,6 +6,9 @@ A Simple Dropdown Menu Selection.
 <p align= "center">
 <img src='https://github.com/stevenpho/DropdownSelection/blob/master/DropdownSelection/Assets/DropDownSelection.xcassets/Logo.imageset/Logo.png'>
 </p>
+<p align= "left">
+<img src='https://github.com/stevenpho/DropdownSelection/blob/master/DropdownSelection/Assets/demo.gif' width="200" />
+</p>
 <!--[![CI Status](https://img.shields.io/travis/Steven Lee/DropdownSelection.svg?style=flat)](https://travis-ci.org/Steven Lee/DropdownSelection)
 [![Version](https://img.shields.io/cocoapods/v/DropdownSelection.svg?style=flat)](https://cocoapods.org/pods/DropdownSelection)
 [![License](https://img.shields.io/cocoapods/l/DropdownSelection.svg?style=flat)](https://cocoapods.org/pods/DropdownSelection)
