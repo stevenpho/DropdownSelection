@@ -16,11 +16,11 @@ protocol AutoButtonViewDelegate : DropDownMenuBaseDelegate{
 /** Drop Down Menu Result View */
 public class DropDownMenuResultView: DropDownMenuBaseView, AutoButtonViewDelegate, DropDownContentStackViewDelegate{
     /** Dropdown Menu Result View下拉選單上面一直顯示的結果View */
-    fileprivate lazy var contentStackView = DropDownSelectionResultStackView()
+    lazy var contentStackView = DropDownSelectionResultStackView()
     /** Dropdown Menu Delegate */
     public weak var delegate : DropDownContentStackViewDelegate? = nil
     /** Dropdown Menu Will Get Top of ViewController 下拉選單列表View 會自己抓最上層的ＶＣ來加上去確保都是最上層 */
-    fileprivate lazy var menuListContentStackView = DropDownContentStackView().then{
+    lazy var menuListContentStackView = DropDownContentStackView().then{
         $0.isHidden = true
     }
     /** Dropdown Menu Record Rect */
